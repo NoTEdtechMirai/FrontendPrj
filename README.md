@@ -21,11 +21,7 @@
 # How to Build
 
 1. Install and setup Nodejs + Express (https://daily.dev/blog/setup-nodejs-express-project-a-beginners-guide)
-2. Clone the repository
-  `git clone https://github.com/NoTEdtechMirai/FrontendPrj.git`
-4. Install package
-  `npm install`
-6. Build project
-  npm start
-8. Access link
-  `http://localhost:3000/`
+2. Clone the repository   `git clone https://github.com/NoTEdtechMirai/FrontendPrj.git`
+4. Install package        `npm install`
+6. Build project          `npm start`
+8. Access link            `http://localhost:3000/`
