@@ -11746,7 +11746,7 @@ html {
 }
 
 header {
-  background-image: url('/html/assets/bgr-header.png');
+  background-image: url('../assets/bgr-header.png');
   background-size: cover;
   background-position: center;
   padding: 20px;
