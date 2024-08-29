@@ -64,6 +64,14 @@
   $('.search-close').on('click', function () {
     $('.search-box').removeClass('search-open');
   });
+  
+  $('.search1-bar').on('click', function () {
+    $('.search-box').addClass('search-open');
+  });
+  $('.search1-close').on('click', function () {
+    $('.search-box').removeClass('search-open');
+    console.log(1);
+  });
 
   /* humberger menu */
   function toggleSidebar() {

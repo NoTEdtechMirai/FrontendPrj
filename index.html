@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="./html/assets/css/default.css" />
         <link rel="stylesheet" href="./html/assets/css/aos.css" />
         <link rel="stylesheet" href="./html/assets/css/style.css" />
+        <link rel="stylesheet" href="./html/assets/css/landingpage.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -33,10 +35,10 @@
                     <div class="right-content ml-auto mr-5">
                         <ul class="main-menu d-flex align-items-center">
                             <li>
-                                <button class="btn0">Đăng nhập</button>
+                                <button class="btn0 search1-bar">Đăng nhập</button>
                             </li>
                             <li>
-                                <button class="btn1">Đăng ký</button>
+                                <button class="btn1 search1-bar">Đăng ký</button>
                             </li>
                         </ul>                        
                     </div>
@@ -54,12 +56,74 @@
                             <li>
                                 <a class="active" href="index.html">Trang chủ</a>
                             </li>
-                            <li><a href="services.html">Đăng nhập</a></li>
-                            <li><a href="about-us.html">Đăng ký</a></li>
+                            <li><a class="search1-bar">Đăng nhập</a></li>
+                            <li><a class="search1-bar">Đăng ký</a></li>
                         </ul>
                     </div>
                     <div class="overlay"></div>
                 </aside>
+            </div>
+            
+            <div class="search-box">
+                <div class="search-form">
+                    <div >
+                        <div class="container1 center-login" id="container">
+                            <div class="form-container sign-up center-login">
+                              <form>
+                                <h3 style="margin-top: 20px;">Tạo tài khoản</h3>
+                                <div class="social-icons">
+                                  <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                                  <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                  <a href="https://github.com/moizali125" class="icon"><i class="fa-brands fa-github"></i></a>
+                                  <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                                <span>hoặc sử dụng email để tạo</span>
+                                <input type="text" placeholder="Name" />
+                                <input type="email" placeholder="Email" />
+                                <input type="password" placeholder="Password" />
+                                <button class="btn1 search1-bar">Đăng ký</button>
+                              </form>
+                            </div>
+                            <div class="form-container sign-in">
+                              <form>
+                                <h3 style="margin-top: 20px;">Đăng nhập</h3>
+                                <div class="social-icons">
+                                  <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                                  <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                  <a href="https://github.com/moizali125" class="icon"
+                                    ><i class="fa-brands fa-github"></i
+                                  ></a>
+                                  <a href="#" class="icon"
+                                    ><i class="fa-brands fa-linkedin-in"></i
+                                  ></a>
+                                </div>
+                                <span>hoặc sử dụng tài khoản của bạn</span>
+                                <input type="email" placeholder="Email" />
+                                <input type="password" placeholder="Password" />
+                                <a href="#">Quên mật khẩu?</a>
+                                <button class="btn1 search1-bar" onclick="open_home()">Đăng nhập</button>
+                              </form>
+                            </div>
+                            <div class="toggle-container center-login">
+                              <div class="toggle center-login">
+                                <div class="toggle-panel toggle-left center-login">
+                                  <h3 style="color: #fff;">Welcome Back!</h3>
+                                  <p style="color: #dbd4d4;">Enter your personal details to use all of site features</p>
+                                  <button class="btn0" id="login">Đăng nhập</button>
+                                </div>
+                                <div class="toggle-panel toggle-right center-login">
+                                  <h3 style="color: #fff;">Hello, Friend!</h3>
+                                  <p style="color: #dbd4d4;">
+                                    Register with your personal details to use all of site features
+                                  </p>
+                                  <button class="btn0 search1-bar" id="register">Đăng ký</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="search1-close search-close" href="javascript:void(0)"><i class="fas fa-times"></i></a>
             </div>
         </header>
 
@@ -213,14 +277,25 @@
         <script src="./html/assets/js/slider.js"></script>
         <script src="./html/assets/js/aos.js"></script>
         <script src="./html/assets/js/main.js"></script>
-        <script> 
-         /* magnificPopup video view*/
-            $('.popup-video').magnificPopup({
-              type: 'iframe',
+
+        <script>
+
+            const container = document.getElementById('container');
+            const registerBtn = document.getElementById('register');
+            const loginBtn = document.getElementById('login');
+
+            registerBtn.addEventListener('click', () => {
+                container.classList.add("active");
             });
 
-            
-            
+            loginBtn.addEventListener('click', () => {
+                container.classList.remove("active");
+            });
+
+            function open_home(){
+                window.open("./html/pages/home.html","_self");
+            }
+
         </script>
     </body>
 </html>

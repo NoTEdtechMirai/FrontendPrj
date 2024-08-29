@@ -1080,7 +1080,7 @@ aside,
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: rgba(255,255,255,0.9);
   z-index: 99 !important;
   visibility: hidden;
   opacity: 0;
@@ -1150,14 +1150,7 @@ aside,
 }
 
 .search-form button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 80px;
-  height: 80px;
-  line-height: 56px;
-  border-radius: 50%;
-  background: transparent;
+  margin-bottom: 50px;
 }
 
 /* -------------------------------------- */
@@ -1285,7 +1278,7 @@ aside,
 }
 
 .bannerArea .mask-group .mask4 {
-  top: 130px;
+  top: 90px;
   left: 35px;
   z-index: -99;
 }
@@ -11662,7 +11655,7 @@ aside,
 
 /* Style cho nút */
 .btn0 {
-  background-color: transparent; /* Nền trong suốt khi không hover */
+  background-color: #fff; /* Nền trong suốt khi không hover */
   border: 2px solid black;       /* Viền đen khi không hover */
   padding: 10px 20px;             /* Khoảng cách bên trong nút */
   font-size: 16px;                /* Kích thước chữ */
@@ -11681,7 +11674,7 @@ aside,
 
 /* Style cho nút */
 .btn1 {
-  background-color: transparent; /* Nền trong suốt khi không hover */
+  background-color: #fff; /* Nền trong suốt khi không hover */
   border: 2px solid #ff465e;       /* Viền đen khi không hover */
   color: white;                   /* Chữ đen khi không hover */
   padding: 10px 20px;             /* Khoảng cách bên trong nút */
