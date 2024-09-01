@@ -532,7 +532,7 @@ p {
 }
 
 .header-area .main-menu {
-  padding-left: 155px;
+  align-items: center;
 }
 
 .header-area .main-menu li {
@@ -566,7 +566,7 @@ p {
 .header-area .main-menu li a.active::before {
   content: '';
   position: absolute;
-  width: 26px;
+  width: 100%;
   height: 5px;
   background-color: #ff465e;
   top: -26px;
@@ -634,6 +634,7 @@ p {
   border-radius: 50%;
   text-align: center;
   margin-right: 32px;
+  background: transparent !important;
 }
 
 .header-area .right-content .contact-number .primary__button {
@@ -1300,7 +1301,6 @@ aside,
 .bannerArea.breadcrumb-area {
   position: relative;
   padding-left: 0px;
-  padding-right: 0px;
 }
 
 .bannerArea.breadcrumb-area .bannerArea__wrapper {
@@ -9397,7 +9397,7 @@ aside,
 }
 
 .project-wrapper-title h3 {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 40px;
 }
 
@@ -9411,9 +9411,9 @@ aside,
 }
 
 .project-wrapper-title p {
-  font-size: 18px;
-  line-height: 30px;
-  margin-top: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0px;
 }
 
 .project-wrapper-button {
@@ -11667,42 +11667,189 @@ aside,
   text-align: center;    
 }
 
-/* Style cho nút */
 .btn0 {
-  background-color: #fff; /* Nền trong suốt khi không hover */
-  border: 2px solid black;       /* Viền đen khi không hover */
-  padding: 10px 20px;             /* Khoảng cách bên trong nút */
-  font-size: 16px;                /* Kích thước chữ */
-  font-weight: bold;              /* Đậm chữ */
-  border-radius: 5px;            /* Bo tròn các góc của nút */
-  cursor: pointer;                /* Con trỏ chuột thay đổi khi hover */
-  transition: all 0.3s ease;      /* Hiệu ứng chuyển đổi khi hover */
+  background-color: #fff; 
+  border: 2px solid black;  
+  padding: 10px 20px;   
+  font-size: 16px;              
+  font-weight: bold;           
+  border-radius: 5px;       
+  cursor: pointer;               
+  transition: all 0.3s ease;   
 }
 
-/* Style cho nút khi hover */
 .btn0:hover {
-  background-color: #ff465e;          /* Nền đỏ khi hover */
-  border: 2px solid #ff465e;          /* Viền đỏ khi hover */
-  color: white;                   /* Chữ trắng khi hover */
+  background-color: #ff465e;   
+  border: 2px solid #ff465e;         
+  color: white;                 
 }
 
-/* Style cho nút */
 .btn1 {
-  background-color: #fff; /* Nền trong suốt khi không hover */
-  border: 2px solid #ff465e;       /* Viền đen khi không hover */
-  color: white;                   /* Chữ đen khi không hover */
-  padding: 10px 20px;             /* Khoảng cách bên trong nút */
-  font-size: 16px;                /* Kích thước chữ */
-  font-weight: bold;              /* Đậm chữ */
-  border-radius: 5px;            /* Bo tròn các góc của nút */
-  cursor: pointer;                /* Con trỏ chuột thay đổi khi hover */
-  transition: all 0.3s ease;      /* Hiệu ứng chuyển đổi khi hover */
+  background-color: #fff; 
+  border: 2px solid #ff465e;     
+  color: white;                 
+  padding: 10px 20px;          
+  font-size: 16px;              
+  font-weight: bold;         
+  border-radius: 5px;         
+  cursor: pointer;             
+  transition: all 0.3s ease;    
   background-color: #ff465e;
 }
 
-/* Style cho nút khi hover */
 .btn1:hover {
-  background-color: white;          /* Nền đỏ khi hover */
-  border: 2px solid black;          /* Viền đỏ khi hover */
-  color: black;                   /* Chữ trắng khi hover */
+  background-color: white;    
+  border: 2px solid black;       
+  color: black;               
+}
+
+.center-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.breadcrumb:hover {
+  height: 90px;
+  background-color: #ffecef;
+}
+
+.breadcrumb {
+  border: 2px solid black;
+  width: 190px;
+  justify-content: center;
+  align-items: top;
+}
+
+.breadcrumb-btn {
+  background: transparent;
+  height: 100%;
+}
+
+.breadcrumb-btn:hover {
+  color: #ff465e;
+}
+
+.breadcrumb-item .active {
+  height: 57px;
+  color: #ff465e;
+}
+
+.user-menu {
+  margin-left: 32px;
+  z-index: 1;
+}
+
+.action .profile {
+  position: relative;
+  width: fit-content;
+  height: 60px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.action .profile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.action .menu {
+  position: absolute;
+  top: 120px;
+  right: -10px;
+  padding: 10px 20px;
+  background: #fff;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  border: 2px solid black;   
+  margin-top: 13px;
+  margin-right: 20px;   
+}
+
+.action .menu.active {
+  top: 80px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.action .menu::before {
+  content: "";
+  position: absolute;
+  top: -11.5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+  border-top: 2px solid black; 
+  border-left: 2px solid black;  
+}
+
+.action .menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.5em;
+}
+
+.action .menu h3 span {
+  font-size: 14px;
+  color: #cecece;
+  font-weight: 300;
+}
+
+.action .menu ul li {
+  list-style: none;
+  padding: 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+}
+
+.action .menu ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.action .menu ul li:hover img {
+  opacity: 1;
+}
+
+.action .menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.action .menu ul li:hover a {
+  color: #ff465e;
+}
+
+.profile {
+  border: 2px solid black;
+  border-radius: 30px 10px 35px 30px;
+}
+
+.profile-info {
+  margin-left: 75px; 
+  margin-top: 3px; 
+  margin-right: 20px; 
+  white-space: nowrap; 
+  width: fit-content;
 }

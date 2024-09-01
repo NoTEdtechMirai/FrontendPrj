@@ -30,6 +30,10 @@
    
 
 -----------------------------------------------------------------------------------*/
+function menuToggle() {
+  const toggleMenu = document.querySelector(".menu");
+  toggleMenu.classList.toggle("active");
+}
 
 (function ($) {
   'use strict';
@@ -70,7 +74,6 @@
   });
   $('.search1-close').on('click', function () {
     $('.search-box').removeClass('search-open');
-    console.log(1);
   });
 
   /* humberger menu */

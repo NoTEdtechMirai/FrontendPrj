@@ -100,7 +100,7 @@
                             <input type="email" placeholder="Email" />
                             <input type="password" placeholder="Password" />
                             <a href="#">Quên mật khẩu?</a>
-                            <button class="btn1 search1-bar" onclick="open_home()">Đăng nhập</button>
+                            <button class="btn1 search1-bar" id="loginDirect">Đăng nhập</button>
                           </form>
                         </div>
                         <div class="toggle-container center-login toggle-res">
@@ -108,14 +108,14 @@
                             <div class="toggle-panel toggle-left center-login">
                               <h3 style="color: #fff;">Welcome Back!</h3>
                               <p style="color: #dbd4d4;">Enter your personal details to use all of site features</p>
-                              <button class="btn0" id="login">Đăng nhập</button>
+                              <button class="btn0" style="border-color: white !important;" id="login">Đăng nhập</button>
                             </div>
                             <div class="toggle-panel toggle-right center-login toggle-res">
                               <h3 style="color: #fff;">Hello, Friend!</h3>
                               <p style="color: #dbd4d4;">
                                 Register with your personal details to use all of site features
                               </p>
-                              <button class="btn0 search1-bar" id="register">Đăng ký</button>
+                              <button class="btn0 search1-bar" style="border-color: white !important;" id="register">Đăng ký</button>
                             </div>
                           </div>
                         </div>
@@ -124,7 +124,6 @@
                 <a class="search1-close search-close" href="javascript:void(0)"><i class="fas fa-times"></i></a>
             </div>
         </header>
-
 
         <main>
             <!--  BANNER AREA -->
@@ -151,8 +150,8 @@
                                 <p class="bannerArea__brief">
                                     Đọc sách mọi lúc, mọi nơi.
                                 </p>
-                                <div class="bannerArea__buttons">
-                                    <a class="primary__button primary__button-bgPrimary" href="services.html">
+                                <div class="bannerArea__buttons" id="explore">
+                                    <a class="primary__button primary__button-bgPrimary" href="#">
                                         Bắt đầu khám phá
                                     </a>
                                 </div>
@@ -281,6 +280,16 @@
             const container = document.getElementById('container');
             const registerBtn = document.getElementById('register');
             const loginBtn = document.getElementById('login');
+            const exploreBtn = document.getElementById('explore');
+            const loginDirectBtn = document.getElementById('loginDirect');
+
+            loginDirectBtn.addEventListener('click', () => {
+                window.location.href = "http://127.0.0.1:5500/html/pages/home.html";
+            });
+
+            exploreBtn.addEventListener('click', () => {
+                $('.search-box').addClass('search-open');
+            });
 
             registerBtn.addEventListener('click', () => {
                 container.classList.add("active");
@@ -289,10 +298,6 @@
             loginBtn.addEventListener('click', () => {
                 container.classList.remove("active");
             });
-
-            function open_home(){
-                window.open("./html/pages/home.html","_self");
-            }
 
             function open_register(){
                 container.classList.add("active");
