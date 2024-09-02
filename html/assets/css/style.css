@@ -9537,7 +9537,6 @@ aside,
   margin: 0 45px;
   border-radius: 24px;
   position: relative;
-  z-index: -5;
 }
 
 .project-work-process.project-detail {
@@ -11709,14 +11708,20 @@ aside,
   width: 100%;
 }
 
-.breadcrumb:hover {
+.breadcrumb1:hover {
   height: 90px;
   background-color: #ffecef;
 }
 
-.breadcrumb {
+.breadcrumb1 {
   border: 2px solid black;
   width: 190px;
+  justify-content: center;
+  align-items: top;
+}
+
+.breadcrumb {
+  border: 2px solid black;
   justify-content: center;
   align-items: top;
 }
@@ -11852,4 +11857,76 @@ aside,
   margin-right: 20px; 
   white-space: nowrap; 
   width: fit-content;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-left: 50px;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgba(255, 255, 255, 0.7); 
+  color: #333;
+  padding: 10px 10px 10px 30px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 38px 20px 10px 10px;
+  text-align: left;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  border: 2px solid black;
+}
+
+.dropdown::after {
+  content: '▼';
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  pointer-events: none;
+  color: #333;
+}
+
+.dropdown select {
+  padding-right: 40px;
+}
+
+.option:hover {
+  background: black !important;
+}
+
+.filter-btn {
+  width: fit-content;
+  height: fit-content;
+  background: #fff;
+  padding: 15px;
+  border-radius: 40px;
+  border: 2px solid black; 
+}
+
+.filter-btn:hover #filterBtn {
+  stroke: #fff;
+  fill: #ff465e;
+}
+
+.filter-btn:hover {
+  background: #ff465e;
+  border: 2px solid white; 
+}
+
+#filterBtn {
+  transition: fill 0.3s ease;
 }

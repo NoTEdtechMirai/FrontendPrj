@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Home</title>
+    <title>More Book</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Place favicon.ico in the root directory -->
@@ -94,6 +94,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="hamburger-menu">
                     <span></span><span></span><span></span>
                 </div>
@@ -106,7 +107,7 @@
                             <img src="../assets/img/logo/logo.png" alt="logo" />
                         </a>
                     </div>
-                    <form class="asidesearch-bar">
+                    <form class="aside search-bar">
                         <input type="text" name="search" />
                         <img src="../assets/img/logo/search.svg" alt="search logo" />
                     </form>
@@ -140,75 +141,281 @@
             <a class="search-close" href="javascript:void(0)"><i class="fas fa-times"></i></a>
         </div>
     </header>
+
     <main class="project-details-content">
-        <!--  BREADCRUMB AREA -->
-        <section class="banner-area breadcrumArea mb-0">
-            <div class="container custom-container">
-                <div style="background-image: url(../assets/img/mask/breadcrumbmask.png);" class="breadcrum-banner">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-lg-6 order-1 order-lg-2 ml-auto">
-                            <div class="banner-image" data-aos="fade-left" data-aos-delay="300" data-aos-offset="500">
-                                <img src="../assets/img/banner/breadcrumb-banner.png" alt="banner-image"
-                                    class="img-fluid" />
+
+        <section class="project-detail project-work-process pb-40" style="margin-top: 55px !important;">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col" style="display: flex; align-items: center;">
+                        <h5>
+                            <span>
+                                <a>Trang chủ</a>
+                                &nbsp>&nbsp
+                                <span style="color: #ff465e;">Sách tham khảo</span>
+                            </span>
+                        </h5>
+                    </div>
+                    <div class="col mr-5" style="display: flex; justify-content: end;">
+                        <button style="background: transparent;">
+                            <div class="filter-btn">
+                                <svg id="filterBtn" xmlns="http://www.w3.org/2000/svg" width="30.621" height="30.621" viewBox="0 0 30.621 30.621" fill="none" stroke="#ff465e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter">
+                                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" transform="translate(3 3)"></polygon></svg>
                             </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="dropdown">
+                            <select>
+                                <option selected disabled>Lớp</option>
+                                <option value="1">Tùy chọn 1</option>
+                                <option value="2">Tùy chọn 2</option>
+                                <option value="3">Tùy chọn 3</option>
+                            </select>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <div class="breadcrumb-wrapper">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb breadcrumb1">
-                                        <li class="breadcrumb-item" aria-current="page">
-                                            <button class="breadcrumb-btn">Mới cập nhật</button>
-                                        </li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="breadcrumb-wrapper" style="margin-left: 220px;">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb breadcrumb1">
-                                        <li class="breadcrumb-item" aria-current="page">
-                                            <button class="breadcrumb-btn active">Nổi bật</button>
-                                        </li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="breadcrumb-wrapper" style="margin-left: 440px;">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb breadcrumb1">
-                                        <li class="breadcrumb-item" aria-current="page">
-                                            <button class="breadcrumb-btn">Xem nhiều nhất</button>
-                                        </li>
-                                    </ol>
-                                </nav>
-                            </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="dropdown">
+                            <select>
+                                <option selected disabled>Nhà xuất bản</option>
+                                <option value="1">Tùy chọn 1</option>
+                                <option value="2">Tùy chọn 2</option>
+                                <option value="3">Tùy chọn 3</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="breadcrumbmask">
-                        <img class="mask1" src="../assets/img/mask/layerShape-02.png" alt="mask" />
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="dropdown">
+                            <select>
+                                <option selected disabled>Năm xuất bản</option>
+                                <option value="1">Tùy chọn 1</option>
+                                <option value="2">Tùy chọn 2</option>
+                                <option value="3">Tùy chọn 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="dropdown">
+                            <select>
+                                <option selected disabled>Loại sách</option>
+                                <option value="1">Tùy chọn 1</option>
+                                <option value="2">Tùy chọn 2</option>
+                                <option value="3">Tùy chọn 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="dropdown">
+                            <select>
+                                <option selected disabled>Tác giả</option>
+                                <option value="1">Tùy chọn 1</option>
+                                <option value="2">Tùy chọn 2</option>
+                                <option value="3">Tùy chọn 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="dropdown">
+                            <select>
+                                <option selected disabled>Đánh giá</option>
+                                <option value="1">Tùy chọn 1</option>
+                                <option value="2">Tùy chọn 2</option>
+                                <option value="3">Tùy chọn 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="dropdown">
+                            <select>
+                                <option selected disabled>Tập</option>
+                                <option value="1">Tùy chọn 1</option>
+                                <option value="2">Tùy chọn 2</option>
+                                <option value="3">Tùy chọn 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="dropdown">
+                            <select>
+                                <option selected disabled>Đã lưu</option>
+                                <option value="1">Tùy chọn 1</option>
+                                <option value="2">Tùy chọn 2</option>
+                                <option value="3">Tùy chọn 3</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="shape">
+                <img data-aos="fade-down" data-aos-easing="linear" src="../assets/img/mask/leftMask.svg" alt="shape"
+                    class="img-fluid round-shape01" />
+                <img data-aos="fade-down" data-aos-easing="linear" src="../assets/img/mask/mask06.png" alt="shape"
+                    class="img-fluid round-shape02" />
+            </div>
         </section>
 
-        <section class="our-teams mb-50" style="padding-bottom: 0px !important;">
-            <div class="container"
-                style="border-left: 3.5px solid #ff465e; border-bottom: 3.5px solid #ff465e; border-radius: 30px 0 0 30px">
-                <div class="row mb-10 mt-20">
-                    <div class="col-auto" style="border-top: 3.5px solid #ff465e; border-radius: 30px 0 0 0">
-                        <h6 style="height: 130%; align-items: center; display: flex;">Sách giáo khoa</h6>
-                    </div>
-                    <div class="col">
-                        <div style="width: 100%; display: flex; justify-content: end;">
-                            <button class="btn1">Xem thêm</button>
+        <section class="our-teams mb-50" style="padding-bottom: 0px !important; padding-top: 50px !important;">
+            <div class="container">
+                <div class="row all-member">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up">
+                            <div class="image">
+                                <img src="../assets/img/book/book1.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tiếng Việt 1</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row all-member">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="200">
+                            <div class="image">
+                                <img src="../assets/img/book/book2.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tiếng Việt 2</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="400">
+                            <div class="image">
+                                <img src="../assets/img/book/book3.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tin học 3</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="600">
+                            <div class="image">
+                                <img src="../assets/img/book/book4.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tin học 4</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up">
+                            <div class="image">
+                                <img src="../assets/img/book/book1.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tiếng Việt 1</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="200">
+                            <div class="image">
+                                <img src="../assets/img/book/book2.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tiếng Việt 2</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="400">
+                            <div class="image">
+                                <img src="../assets/img/book/book3.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tin học 3</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="600">
+                            <div class="image">
+                                <img src="../assets/img/book/book4.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tin học 4</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up">
+                            <div class="image">
+                                <img src="../assets/img/book/book1.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tiếng Việt 1</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="200">
+                            <div class="image">
+                                <img src="../assets/img/book/book2.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tiếng Việt 2</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="400">
+                            <div class="image">
+                                <img src="../assets/img/book/book3.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tin học 3</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="600">
+                            <div class="image">
+                                <img src="../assets/img/book/book4.png" alt="Team Member" class="img-fluid" />
+                            </div>
+                            <div class="member-info shadow d-flex justify-content-between">
+                                <div class="name">
+                                    <h5>Tin học 4</h5>
+                                    <p><strong>NXB</strong>: Kim Đông</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="our-teams-member" data-aos="fade-up">
                             <div class="image">
@@ -265,145 +472,33 @@
             </div>
         </section>
 
-        <section class="our-teams mb-50" style="padding-bottom: 0px !important; padding-top: 0px !important;">
-            <div class="container"
-                style="border-left: 3.5px solid #ff465e; border-bottom: 3.5px solid #ff465e; border-radius: 30px 0 0 30px">
-                <div class="row mb-10 mt-20">
-                    <div class="col-auto" style="border-top: 3.5px solid #ff465e; border-radius: 30px 0 0 0">
-                        <h6 style="height: 130%; align-items: center; display: flex;">Sách tham khảo</h6>
-                    </div>
-                    <div class="col">
-                        <div style="width: 100%; display: flex; justify-content: end;">
-                            <button class="btn1">Xem thêm</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row all-member">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-teams-member" data-aos="fade-up">
-                            <div class="image">
-                                <img src="../assets/img/book/book1.png" alt="Team Member" class="img-fluid" />
-                            </div>
-                            <div class="member-info shadow d-flex justify-content-between">
-                                <div class="name">
-                                    <h5>Tiếng Việt 1</h5>
-                                    <p><strong>NXB</strong>: Kim Đông</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="200">
-                            <div class="image">
-                                <img src="../assets/img/book/book2.png" alt="Team Member" class="img-fluid" />
-                            </div>
-                            <div class="member-info shadow d-flex justify-content-between">
-                                <div class="name">
-                                    <h5>Tiếng Việt 2</h5>
-                                    <p><strong>NXB</strong>: Kim Đông</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="400">
-                            <div class="image">
-                                <img src="../assets/img/book/book3.png" alt="Team Member" class="img-fluid" />
-                            </div>
-                            <div class="member-info shadow d-flex justify-content-between">
-                                <div class="name">
-                                    <h5>Tin học 3</h5>
-                                    <p><strong>NXB</strong>: Kim Đông</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="600">
-                            <div class="image">
-                                <img src="../assets/img/book/book4.png" alt="Team Member" class="img-fluid" />
-                            </div>
-                            <div class="member-info shadow d-flex justify-content-between">
-                                <div class="name">
-                                    <h5>Tin học 4</h5>
-                                    <p><strong>NXB</strong>: Kim Đông</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="blog-area" style="padding-top: 0px !important;">
+            <div class="container">
+                <div class="pt-30 pagination-area" style="display: flex; justify-content: center;">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="shadow-sm page-link" href="javascript:void(0)"><i
+                                        class="fas fa-angle-left"></i></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="shadow-sm page-link active" href="javascript:void(0)">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="shadow-sm page-link" href="javascript:void(0)">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="shadow-sm page-link" href="javascript:void(0)">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="shadow-sm page-link" href="javascript:void(0)"><i
+                                        class="fas fa-angle-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </section>
-
-        <section class="our-teams mb-30" style="padding-bottom: 0px !important; padding-top: 0px !important;">
-            <div class="container"
-                style="border-left: 3.5px solid #ff465e; border-bottom: 3.5px solid #ff465e; border-radius: 30px 0 0 30px">
-                <div class="row mb-10 mt-20">
-                    <div class="col-auto" style="border-top: 3.5px solid #ff465e; border-radius: 30px 0 0 0">
-                        <h6 style="height: 130%; align-items: center; display: flex;">Sách nói</h6>
-                    </div>
-                    <div class="col">
-                        <div style="width: 100%; display: flex; justify-content: end;">
-                            <button class="btn1">Xem thêm</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row all-member">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-teams-member" data-aos="fade-up">
-                            <div class="image">
-                                <img src="../assets/img/book/book1.png" alt="Team Member" class="img-fluid" />
-                            </div>
-                            <div class="member-info shadow d-flex justify-content-between">
-                                <div class="name">
-                                    <h5>Tiếng Việt 1</h5>
-                                    <p><strong>NXB</strong>: Kim Đông</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="200">
-                            <div class="image">
-                                <img src="../assets/img/book/book2.png" alt="Team Member" class="img-fluid" />
-                            </div>
-                            <div class="member-info shadow d-flex justify-content-between">
-                                <div class="name">
-                                    <h5>Tiếng Việt 2</h5>
-                                    <p><strong>NXB</strong>: Kim Đông</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="400">
-                            <div class="image">
-                                <img src="../assets/img/book/book3.png" alt="Team Member" class="img-fluid" />
-                            </div>
-                            <div class="member-info shadow d-flex justify-content-between">
-                                <div class="name">
-                                    <h5>Tin học 3</h5>
-                                    <p><strong>NXB</strong>: Kim Đông</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-teams-member" data-aos="fade-up" data-aos-delay="600">
-                            <div class="image">
-                                <img src="../assets/img/book/book4.png" alt="Team Member" class="img-fluid" />
-                            </div>
-                            <div class="member-info shadow d-flex justify-content-between">
-                                <div class="name">
-                                    <h5>Tin học 4</h5>
-                                    <p><strong>NXB</strong>: Kim Đông</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
 
     </main>
     <!--  FOOTER AREA -->
