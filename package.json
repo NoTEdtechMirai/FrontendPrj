@@ -40,6 +40,7 @@
     "express": "~4.16.1",
     "express-session": "^1.16.2",
     "http-errors": "~1.6.3",
+    "pspdfkit": "^2024.5.1",
     "pug": "^2.0.4"
   },
   "devDependencies": {

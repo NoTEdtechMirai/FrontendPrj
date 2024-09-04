@@ -8415,7 +8415,7 @@ aside,
 }
 
 .about-us-text .alart-icon {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .about-us-text .alart-icon i {
@@ -8428,7 +8428,7 @@ aside,
   font-size: 18px;
   line-height: 26px;
   font-family: "Roboto-Medium";
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .about-us-text .alart-boldtext {
@@ -11917,7 +11917,7 @@ select {
   border: 2px solid black; 
 }
 
-.filter-btn:hover #filterBtn {
+.filter-btn:hover .filterBtn {
   stroke: #fff;
   fill: #ff465e;
 }
@@ -11927,6 +11927,52 @@ select {
   border: 2px solid white; 
 }
 
-#filterBtn {
+.filterBtn {
   transition: fill 0.3s ease;
+}
+
+.star {
+  animation: shake 5s infinite ease-in-out; 
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  transition: filter 0.3s ease;
+}
+
+.star:hover {
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.6));
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg); 
+  }
+  25% {
+    transform: rotate(3deg); 
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+}
+
+.div-with-border {
+  position: relative;
+  padding-top: 30px;
+}
+
+.div-with-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.a-hover:hover {
+  color: #ff465e;
 }
