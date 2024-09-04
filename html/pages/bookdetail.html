@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Book Detail</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon/boy.png" />
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="../assets/css/slick.css" />
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="../assets/css/default.css" />
+    <link rel="stylesheet" href="../assets/css/aos.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+            your experience and security.
+        </p>
+        <![endif]-->
+    <!-- Add your site or application content here -->
+    <!--  HEADER AREA -->
+    <header id="header" class="header-area">
+        <div class="container custom-container">
+            <nav class="menu-area d-flex align-items-center">
+                <div class="logo">
+                    <a href="index.html"><img src="../assets/img/logo/logo5.png" alt="logo" /></a>
+                </div>
+                <div class="center-menu mr-auto">
+                    <ul class="main-menu d-flex align-items-center">
+                        <li>
+                            <a href="javascript:void(0)">Thư viện</a>
+                        </li>
+                        <li>
+                            <a class="active" href="javascript:void(0)">Đọc sách</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Video</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Bài tập</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-content ml-auto">
+                    <div class="search-bar">
+                        <img src="../assets/img/logo/search.svg" alt="search logo" />
+                    </div>
+                    <button style="background: transparent;">
+                        <img src="../assets/img/logo/bell.svg" alt="search logo" />
+                    </button>
+                    <div class="user-menu">
+                        <div class="action">
+                            <div class="profile" onclick="menuToggle()">
+                                <img src="../assets/img/avatar/Avator-3.png" />
+                                <div class="profile-info">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h7><strong>User Name</strong></h7>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>Học sinh</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <ul>
+                                    <li>
+                                        <img src="../assets/img/icon/user.png" /><a href="#">Tài khoản</a>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/img/icon/edit.png" /><a href="#">Sửa thông tin</a>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/img/icon/settings.png" /><a href="#">Cài đặt</a>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/img/icon/log-out.png" /><a href="#">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hamburger-menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+            <aside>
+                <div class="sidebar-menu">
+                    <div class="close-sidebar"><span></span><span></span></div>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="../assets/img/logo/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                    <form class="aside search-bar">
+                        <input type="text" name="search" />
+                        <img src="../assets/img/logo/search.svg" alt="search logo" />
+                    </form>
+                    <ul class="main-menu">
+                        <li>
+                            <a class="active" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li><a href="javascript:void(0)">Services</a></li>
+                        <li><a href="javascript:void(0)">About Us</a></li>
+                        <li><a href="javascript:void(0)">Portfolio</a></li>
+                        <li><a href="javascript:void(0)">Blog</a></li>
+                        <li><a href="javascript:void(0)">Contact Us</a></li>
+                    </ul>
+                    <a class="primary__button primary__button-bgBlack contacprimary__button" href="tel:+987 45478 547">
+                        <img src="../assets/img/logo/phone-alt.svg" alt="phone alt" />
+                        +987 45478 547
+                    </a>
+                </div>
+                <div class="overlay"></div>
+            </aside>
+        </div>
+        <div class="search-box">
+            <div class="search-form">
+                <form action="#">
+                    <input type="text" placeholder="Enter Your Kayword" />
+                    <button type="submit">
+                        <img src="../assets/img/logo/search.svg" alt="search logo" />
+                    </button>
+                </form>
+            </div>
+            <a class="search-close" href="javascript:void(0)"><i class="fas fa-times"></i></a>
+        </div>
+    </header>
+
+    <main class="project-details-content">
+
+        <section class="project-detail project-work-process pb-20" style="margin-top: 55px !important;">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col" style="display: flex; align-items: center;">
+                        <h5>
+                            <span>
+                                <a href="#" class="a-hover">Trang chủ</a>
+                                &nbsp>&nbsp
+                                <a href="#" class="a-hover">Sách giáo khoa</a>
+                                &nbsp>&nbsp
+                                <span style="color: #ff465e;">Tin học 4</span>
+                            </span>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="shape">
+                <img data-aos="fade-down" data-aos-easing="linear" src="../assets/img/mask/leftMask.svg" alt="shape"
+                    class="img-fluid round-shape01" />
+                <img data-aos="fade-down" data-aos-easing="linear" src="../assets/img/mask/mask06.png" alt="shape"
+                    class="img-fluid round-shape02" />
+            </div>
+        </section>
+
+        <section class="about-us" style="padding-bottom: 80px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-us-image" data-aos="fade-right" data-aos-delay="500">
+                            <div class="image" style="margin-left: 0; margin-right: 90px;">
+                                <img src="../assets/img/book/book4.png" alt="Image" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" style="display: flex; justify-content: start !important;">
+                        <div class="about-us-text" data-aos="fade-up">
+                            <div class="sub-heading">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>Tin học 4</h2>
+                                    </div>
+                                    <div class="col"
+                                        style="display: flex; justify-content: right; width: fit-content; width: fit-content !important;">
+                                        <ul class="d-flex">
+                                            <li>
+                                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                                    height="2em" viewBox="0 0 24 24">
+                                                    <path stroke="#000" fill="#fab005"
+                                                        d="M12.5 17.925L6.629 21l1.121-6.512L3 9.875l6.564-.95L12.5 3l2.936 5.925l6.564.95l-4.75 4.613L18.371 21z" />
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                                    height="2em" viewBox="0 0 24 24">
+                                                    <path stroke="#000" fill="#fab005"
+                                                        d="M12.5 17.925L6.629 21l1.121-6.512L3 9.875l6.564-.95L12.5 3l2.936 5.925l6.564.95l-4.75 4.613L18.371 21z" />
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                                    height="2em" viewBox="0 0 24 24">
+                                                    <path stroke="#000" fill="#fab005"
+                                                        d="M12.5 17.925L6.629 21l1.121-6.512L3 9.875l6.564-.95L12.5 3l2.936 5.925l6.564.95l-4.75 4.613L18.371 21z" />
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                                    height="2em" viewBox="0 0 24 24">
+                                                    <path stroke="#000" fill="#fab005"
+                                                        d="M12.5 17.925L6.629 21l1.121-6.512L3 9.875l6.564-.95L12.5 3l2.936 5.925l6.564.95l-4.75 4.613L18.371 21z" />
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                                    height="2em" viewBox="0 0 24 24">
+                                                    <path stroke="#000" fill="#fff"
+                                                        d="M12.5 17.925L6.629 21l1.121-6.512L3 9.875l6.564-.95L12.5 3l2.936 5.925l6.564.95l-4.75 4.613L18.371 21z" />
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Proin vitae dignissim enim, a iaculis sapien. nisi et dignissim efficitur, sapien
+                                    lorem porta lorem, et tristique nulla lectus faucibus est Pellentesque bus imperdiet
+                                    magna.ultrices.
+                                </p>
+                            </div>
+                            <div class="feature d-flex align-items-start">
+                                <div class="icon d-flex align-items-center justify-content-center mr-15 shadow"
+                                    style="background-color: #ff465e;">
+                                    <i class="fas fa-user-clock"></i>
+                                </div>
+                                <div class="text">
+                                    <h6>Nhà xuất bản</h6>
+                                    <p>
+                                        Nhà xuất bản Kim Đống
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feature d-flex align-items-start">
+                                <div class="icon d-flex align-items-center justify-content-center mr-15 shadow"
+                                    style="background-color: #3c68c1;">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="text">
+                                    <h6>Năm xuất bản</h6>
+                                    <p>
+                                        20xx
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feature d-flex align-items-start">
+                                <div class="icon d-flex align-items-center justify-content-center mr-15 shadow"
+                                    style="background-color: #63be52;">
+                                    <i class="fas fa-sitemap"></i>
+                                </div>
+                                <div class="text">
+                                    <h6>Loại ấn phẩm</h6>
+                                    <p>
+                                        Sách giáo khoa
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="c-wrapper">
+                                <div class="alart d-flex justify-content-between align-items-center">
+                                    <div class="alart-text">
+                                        <p>
+                                            Bản cứng hiện có
+                                        </p>
+                                    </div>
+                                    <div class="alart-boldtext mr-3">
+                                        <h2>30</h2>
+                                    </div>
+                                    <div class="alart-icon">
+                                        <i class="fas fa-business-time"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="width: 100%;">
+                                <div class="col" style="display: flex; justify-content: left; margin-top: 20px;">
+                                    <button class="primary__button primary__button-bgPrimary shadow">
+                                        Đọc thêm
+                                    </button>
+                                </div>
+                                <div class="col-auto" class="share-tags"
+                                    style="display: flex; justify-content: right; align-items: center; margin-top: 20px;">
+                                    <button style="background: transparent; margin-right: 10px;">
+                                        <div class="filter-btn">
+                                            <svg class="filterBtn" xmlns="http://www.w3.org/2000/svg" width="25"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="#ff465e"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-facebook">
+                                                <path
+                                                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button style="background: transparent; margin-right: 10px;">
+                                        <div class="filter-btn">
+                                            <svg class="filterBtn" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="#ff465e"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-instagram">
+                                                <rect x="2" y="2" width="21" height="20" rx="5" ry="5"></rect>
+                                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button style="background: transparent; margin-right: 10px;">
+                                        <div class="filter-btn">
+                                            <svg class="filterBtn" xmlns="http://www.w3.org/2000/svg" width="25"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="#ff465e"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-share">
+                                                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                                <polyline points="16 6 12 2 8 6"></polyline>
+                                                <line x1="12" y1="2" x2="12" y2="15"></line>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-area blog-details" style="padding: 0;">
+            <div class="container div-with-border">
+                <div class="row align-items-start">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="article-item">
+                            <div class="comments-section">
+                                <h3 style="margin-bottom: 50px;"><span class="icon"><i class="far fa-comment-dots"
+                                            style="color: #ff465e;"></i></span>&nbsp 03 Bình luận</h3>
+                                <div class="comments-section-area mb-30">
+                                    <div class="image mb-10 mb-md-0 mb-lg-0">
+                                        <img src="../assets/img/team/member01.png" alt="Person" class="shadow" />
+                                    </div>
+                                    <div class="comments-section-area-comment">
+                                        <div class="commenter mb-15">
+                                            <div class="commenter-info">
+                                                <h6>Mithila Islam</h6>
+                                                <span>25/07/2019</span>
+                                            </div>
+                                            <div class="replay">
+                                                <a href="#"><i class="fas fa-reply"></i> Trả lời</a>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>
+                                                Proactively envisioned multimedia based expertise and cross-media growth
+                                                strategies. Seamlessly ize quality intellectual capital without superior
+                                                collaboration and idea-sharing.
+                                                Holistically pontificate installed
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-section-area mb-30">
+                                    <div class="image mb-10 mb-md-0 mb-lg-0">
+                                        <img src="../assets/img/team/member03.png" alt="Person" class="shadow" />
+                                    </div>
+                                    <div class="comments-section-area-comment">
+                                        <div class="commenter mb-15">
+                                            <div class="commenter-info">
+                                                <h6>Mithila Islam</h6>
+                                                <span>25/07/2019</span>
+                                            </div>
+                                            <div class="replay">
+                                                <a href="#"><i class="fas fa-reply"></i> Trả lời</a>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>
+                                                Proactively envisioned multimedia based expertise and cross-media growth
+                                                strategies. Seamlessly ize quality intellectual capital without superior
+                                                collaboration and idea-sharing.
+                                                Holistically pontificate installed
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-section-area mb-45">
+                                    <div class="image mb-10 mb-md-0 mb-lg-0">
+                                        <img src="../assets/img/team/member02.png" alt="Person" class="shadow" />
+                                    </div>
+                                    <div class="comments-section-area-comment">
+                                        <div class="commenter mb-15">
+                                            <div class="commenter-info">
+                                                <h6>Mithila Islam</h6>
+                                                <span>25/07/2019</span>
+                                            </div>
+                                            <div class="replay">
+                                                <a href="#"><i class="fas fa-reply"></i> Trả lời</a>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>
+                                                Proactively envisioned multimedia based expertise and cross-media growth
+                                                strategies. Seamlessly ize quality intellectual capital without superior
+                                                collaboration and idea-sharing.
+                                                Holistically pontificate installed
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-comment-area" data-aos="fade-up">
+                                <h3>Bình luận</h3>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col">
+                                            <textarea name="User comment" class="form-control mb-30 pb-50 pt-20 pl-20"
+                                                placeholder="Bình luận ở đây"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="primary__button primary__button-bgPrimary shadow">
+                                        Gửi
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--  FOOTER AREA -->
+    <footer>
+        <div class="footer-area" style="padding: 0px !important;">
+            <!-- copyright area -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row align-items-center copyright-area">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="copyright-area-text">
+                                <p>Copyright 2024. All Rights Reserved by Mirai!</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="copyright-area-top text-lg-right">
+                                <a href="#header" id="to-top">Back to Top <i class="fas fa-angle-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS here -->
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
