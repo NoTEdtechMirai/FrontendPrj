@@ -1,0 +1,580 @@
+{
+    "quiz1": [
+        {
+            "q" : "(Những) hành động nào sau đây tạo ra lỗ hổng an toàn an ninh thông tin?",
+            "o" : ["Không cập nhật phần mềm", "Đăng nhập tài khoản cá nhân khi đang truy cập mạng WiFi tại nơi công cộng", "Quản trị viên đọc lén cơ sở dữ liệu chứa mật khẩu của người dùng", "Cài đặt phần mềm diệt virus"],
+            "a" : [1, 2]
+        },
+        {
+            "q" : "Tên của mô hình CIA là viết tắt của những từ nào?",
+            "o" : ["Computer, Internet, Application", "Correctness, Integrity, Avaibility", "Correctness, Integration, Appication", "Confidentiality, Integrity, Avaibility", "Confidentiality, Integrity, Anonymity"],
+            "a" : [4]
+        },
+        {
+            "q" : "Nếu dữ liệu bị mất mà không thể khôi phục thì hệ thống không đáp ứng được (những) yêu cầu an toàn bảo mật nào?",
+            "o" : ["Tính bí mật", "Tính toàn vẹn", "Tính sẵn sàng", "Tính xác thực", "Tính ẩn danh"],
+            "a" : [3]
+        },
+        {
+            "q" : "Khi Bob truy cập mua sách trên website, anh ta phát hiện có thể đổi số tiền cần thanh toán từ 100$ thành 10$. Website không đạt được (những) yêu cầu an toàn bảo mật nào?",
+            "o" : ["Tính bí mật", "Tính toàn vẹn", "Tính sẵn sàng", "Tính xác thực", "Tính ẩn danh"],
+            "a" : [2]
+        },
+        {
+            "q" : "Một ví dụ về yêu cầu_______ là \"Chỉ nhân viên phòng nhân sự mới biết thông tin bảng lương của công ty\".",
+            "o" : ["Tính toàn vẹn", "Tính ẩn danh", "Tính sẵn sàng", "Tính xác thực", "Tính bí mật"],
+            "a" : [5]
+        },
+        {
+            "q" : "Website mà bạn xây dựng cho khách hàng bị đối thủ tấn công an toàn bảo mật. Bạn sẽ thực hiện (những) hành động nào?",
+            "o" : ["Sử dụng các công cụ tấn công để kiểm thử tìm ra lỗ hổng", "Sử dụng các công cụ để tấn công đáp trả đối phương một cách thích đáng", "Tìm cách vá lỗ hổng bảo mật của website", "Cáo buộc nhân viên quản trị website của khách hàng đã vi phạm các nguyên tắc ATTT"],
+            "a" : [1,3]
+        },
+        {
+            "q" : "Công ty của bạn sử dụng một hệ thống để quản lý mã nguồn của các dự án sản xuất phần mềm. Bạn thấy rằng hệ thống này không thực hiện sao lưu dữ liệu. Bạn sẽ làm gì trong trường hợp này?",
+            "o" : ["Không cần làm gì vì đó là trách nhiệm của quản trị viên hệ thống.", "Tự sao lưu mã nguồn của chính mình bằng cách đưa lên các dịch vụ lưu trữ trực tuyến", "Tự sao lưu mã nguồn của mình bằng các sap chép sang thiết bị nhớ cá nhân", "Giải thích với quản trị viên hệ thống đây là một lỗ hổng an toàn an ninh thông tin"],
+            "a" : [4]
+        }
+    ],
+    "quiz2": [
+        {
+            "q" : "Kiến trúc của thành ốc của An Dương Vương là ví dụ minh họa cho việc thực hiện (những) nguyên tắc ATBM nào?",
+            "o" : ["Kiểm soát hoàn toàn", "Phân quyền tối thiểu", "Xử lý mặc định an toàn", "Bảo vệ theo chiều sâu"],
+            "a" : [4]
+        },
+        {
+            "q" : "Lọ Lem đi dự tiệc về muộn nên không thể vào nhà vì bà mẹ kế đã khóa cửa. Nhưng nàng phát hiện cửa sổ chưa cài chốt nên đã vào được qua lối đó. Nguyên tắc nào không được tuân thủ đã trực tiếp gây ra lỗ hổng ATBM?",
+            "o" : ["Tối thiểu hóa quyền", "Chia sẻ tối thiểu", "Bảo vệ theo chiều sâu", "Kiểm soát hoàn toàn mọi truy cập"],
+            "a" : [4]
+        },
+        {
+            "q" : "Sau khi phát hiện hang chứa kho báu bị đột nhập, 40 tên cướp quyết định nâng cấp cánh cửa đá để ngay cả khi thần chú bị lộ thì không ai có thể đi vào. Chúng đã mất một khoản tiền lớn để làm điều này. (Những) nguyên tắc an toàn bảo mật nào đã được thể hiện trong tình huống này?",
+            "o" : ["Bảo vệ theo chiều sâu", "ATBM là bài toán kinh tế", "Dễ sử dụng cho người dùng", "Thiết kế mở"],
+            "a" : [1,2]
+        },
+        {
+            "q" : "Quản trị viên bảo vệ mật khẩu cho tài khoản của người dùng bằng cách lưu vào một file và cất giữ trong thư mục mà chỉ mình anh ta biết. Anh ta đã vi phạm nguyên tắc ATBM nào?",
+            "o" : ["Thiết kế mở", "Tối thiểu hóa quyền", "Đơn giản trong thiết kế", "Dễ dàng cho người sử dụng"],
+            "a" : [1]
+        },
+        {
+            "q" : "Sau khi Alice là trưởng nhóm hoàn thành một dự án cho công ty, cô ấy được chuyển vào làm thành viên trong nhóm của Bob để thực hiện một dự án khác. Alice không còn truy cập được vào hệ thống quản lý dự án của công ty. Nguyên tắc nào đã được áp dụng ở đây?",
+            "o" : ["Kiểm soát hoàn toàn", "Tối thiểu hóa quyền", "Đơn giản trong thiết kế", "Thiết kế mở"],
+            "a" : [2]
+        },
+        {
+            "q" : "Trong tiểu thuyết \"Tiếu ngạo giang hồ\" của Kim Dung, giáo chủ Ma giáo Nhậm Ngã Hành bị giam trong một nhà lao mà cánh cửa có 4 ổ khóa. Mỗi người trong Giang Nam tứ hữu được giao giữ một chìa khóa. (Những) nguyên tắc an toàn bảo mật nào đã được áp dụng?",
+            "o" : ["Bảo vệ theo chiều sâu", "Tối thiểu hóa quyền", "Chia sẻ trách nhiệm", "Xử lý mặc định an toàn"],
+            "a" : [3]
+        }
+    ],
+    "quiz3": [
+        {
+            "q" : "Mật mã dịch vòng sử dụng (những) toán tử nào?",
+            "o" : ["Thay thế ký tự", "Hoán vị các ký tự", "Phép toán XOR"],
+            "a" : [1]
+        },
+        {
+            "q" : "Theo nguyên lý Kerckhoff, cần giữ mật thông tin gì trong hệ mật mã?",
+            "o" : ["Thuật toán mã hóa", "Thuật toán giải mã", "Khuôn dạng bản tin gốc", "Thuật toán sinh khóa", "Giá trị khóa"],
+            "a" : [5]
+        },
+        {
+            "q" : "(Những) Phát biểu nào sau đầy là đúng về hệ mật hoàn hảo là gì?",
+            "o" : ["Hệ mật hoàn hảo chỉ tồn tại trên lý thuyết, không thể thiết kế một hệ mật hoàn hảo mà có thể sử dụng trên thực tế", "Trước mọi thuật toán tấn công hiệu quả(có độ phức tạp đa thức), hệ mật hoàn hảo luôn an toàn", "Trong hệ mật hoàn hảo, xác suất xuất hiện của mọi giá trị khóa là như nhau", "Trong hệ mật hoàn hảo, khóa phải có kích thước tối thiểu bằng kích thước bản tin gốc", "Khi thiết kế được một hệ mật hoàn hảo, khóa có thể dùng lại mà không ảnh hưởng đến tính an toàn"],
+            "a" : [2,3,4]
+        },
+        {
+            "q" : "Để giảm độ rủi ro hệ thống mật mã bị tấn công vét cạn, (những) phương pháp nào sau đây được sử dụng?",
+            "o" : ["Đảo ngược nội dung bản tin trước khi mã hóa", "Sử dụng khóa có kích thước lớn hơn", "Tạo sinh khóa hoàn toàn ngẫu nhiên", "Nén bản tin gốc trước khi mã hóa"],
+            "a" : [2,3]
+        },
+        {
+            "q" : "Giả sử trung bình kẻ tấn công mất 100 năm để bẻ khóa được hệ mật mã bằng phương pháp vét cạn. Nếu hắn biết được chắc chắn giá trị của 2 bit khóa thì thời gian tấn công là bao nhiêu năm?",
+            "o" : ["5", "15", "25", "35"],
+            "a" : [3]
+        },
+        {
+            "q" : "Giả sử kẻ tấn công thực hiện tấn công sử dụng phương pháp tấn công vét cạn với tốc độ thử mỗi khóa mất 1 chu kỳ CPU. Tốc độ CPU ước tính trên máy tính kẻ tấn công sử dụng là 16 GHz. Khóa cần phải có kích thước tối thiểu là bao nhiêu bit để trong thời gian tấn công 100 năm thì xác xuất thành công của kẻ tấn công nhỏ hơn 2^(-60) ?",
+            "o" : ["125", "126", "127", "128"],
+            "a" : [2]
+        },
+        {
+            "q" : "Giả sử kẻ tấn công thực hiện tấn công sử dụng phương pháp tấn công vét cạn với tốc độ thử mỗi khóa mất 1 chu kỳ CPU. Tốc độ CPU ước tính trên máy tính kẻ tấn công sử dụng là 16x10^6 GHz. Khóa cần phải có kích thước tối thiểu là bao nhiêu bit để trong thời gian tấn công 100 năm thì xác xuất thành công của kẻ tấn công nhỏ hơn 1/2^60",
+            "o" : ["143", "144", "145", "146"],
+            "a" : [4]
+        }
+    ],
+    "quiz4": [
+        {
+            "q" : "Kết quả mã hóa bản tin \"SECURITY\" bằng mật mã dịch vòng với giá trị khóa k = 10 là gì?",
+            "o" : ["COMEBSDI", "SDICOMEAD", "COMBESDI", "SCIDOMEAD"],
+            "a" : [1]
+        },
+        {
+            "q" : "Nếu sử dụng mật mã dịch vòng mã hóa bản gốc là \"HELLO\" thành bản mật là \"BYFFI\" thì giá trị khóa đã sử dụng là bao nhiêu?",
+            "o" : ["16", "17", "18", "19", "20"],
+            "a" : [5]
+        },
+        {
+            "q" : "Nếu sử dụng bản chữ cái tiếng Anh, số lượng giá trị khóa khả dụng của mã dịch vòng là bao nhiêu?",
+            "o" : ["24", "25", "26", "27", "28"],
+            "a" : [2]
+        },
+        {
+            "q" : "Mật mã dịch vòng(Shift cipher) là an toàn trước (những) dạng tấn công nào?",
+            "o" : ["Tấn công chỉ biết bản mật", "Tấn công biết trước bản rõ", "Tấn công chọn trước bản rõ", "Tấn công chọn trước bản mật", "Không an toàn trước tất cả các dạng tấn công"],
+            "a" : [5]
+        },
+        {
+            "q" : "Khi sử dụng mật mã one-time-pad, nếu chuỗi bit mã là c = 01010011 và khóa k = 00110001 thì kết quả giải mã là gì?",
+            "o" : ["01000010", "10011101", "0110110", "01100010", "01100011"],
+            "a" : [4]
+        },
+        {
+            "q" : "Khi sử dụng mật mã one-time-pad, nếu chuỗi bit bản rõ m = 11101000 và bản mã c = 01010011 thì khóa k bằng bao nhiêu?",
+            "o" : ["10111011", "01000110", "10110011", "01111011"],
+            "a" : [1]
+        },
+        {
+            "q" : "Hệ mật DES sử dụng khóa có kích thước bao nhiêu bit?",
+            "o" : ["32", "256", "56", "128"],
+            "a" : [3]
+        },
+        {
+            "q" : "Kích thước khối dữ liệu trong mật mã DES là bao nhiêu bit?",
+            "o" : ["16", "32", "128", "64"],
+            "a" : [4]
+        },
+        {
+            "q" : "Nếu ký hiệu E(K) là phép mã hóa DES, D(K) là phép giải mã DES thì trình tự mã hóa theo 3DES có thể là gì?",
+            "o" : ["E(K1) - E(K2) - D(K3)", "E(K1) - E(K2) - D(K1)", "E(K1) - D(K2) - E(K3)", "E(K1) - D(K2) - E(K1)"],
+            "a" : [3,4]
+        },
+        {
+            "q" : "Mật mã AES sử dụng khóa có kích thước bao nhiêu?",
+            "o" : ["64", "128", "192", "256"],
+            "a" : [2,3,4]
+        },
+        {
+            "q" : "Kích thước khối dữ liệu của mật mã AES là bao nhiêu bit?",
+            "o" : ["64", "128", "192", "256"],
+            "a" : [2]
+        },
+        {
+            "q" : "(Những) Phương pháp mật mã nào sau đây còn an toàn để sử dụng?",
+            "o" : ["DES", "2DES", "2DES", "AES"],
+            "a" : [4]
+        }
+    ],
+    "quiz5": [
+        {
+            "q" : "Chế độ mã ECB chống lại được (những) dạng tấn công nào dưới đây?",
+            "o" : ["Tấn công chọn trước bản rõ (CPA)", "Tấn công chọn trước bản mật (CCA)", "Tấn công biết trước bản rõ (KPA)", "Không chống được loại tấn công nào đã liệt kê"],
+            "a" : [4]
+        },
+        {
+            "q" : "Hạn chế của chế độ mã ECB so với CBC là gì?",
+            "o" : ["Tốc độ thực hiện chậm hơn", "Không an toàn để sử dụng", "Không có cơ chế kiểm tra toàn vẹn", "Kích thước bản gốc phải chia hết cho kích thước của khối"],
+            "a" : [2]
+        },
+        {
+            "q" : "Ưu điểm của chế độ mã CTR so với CBC là gì?",
+            "o" : ["Tốc độ mã hóa nhanh hơn", "Không cần thêm phần đệm", "An toàn hơn trước tấn công CCA", "Không cần giữ mật giá trị IV"],
+            "a" : [1,2]
+        },
+        {
+            "q" : "Sử dụng mật mã 3DES ở chế độ CBC cho bản tin có kích thước 200 byte. Phần đệm có kích thước bao nhiêu byte?",
+            "o" : ["6", "7", "9", "8", "10"],
+            "a" : [4]
+        },
+        {
+            "q" : "Sử dụng mật mã AES ở chế độ CBC cho bản tin có kích thước 201 byte. Nếu dùng chuẩn PKCS#7, giá trị phần đệm viết dưới dạng hexa là bao nhiêu?",
+            "o" : ["07070707070707", "06060606060606", "08080808080808", "05050505050505"],
+            "a" : [1]
+        },
+        {
+            "q" : "Giả sử khi sử dụng chế độ CBC và CTR, giá trị IV là giá trị thời gian hiện tại của hệ thống. Phát biểu nào sau đây là đúng?",
+            "o" : ["Cả 2 chế độ mã không an toàn trước tấn công CPA", "Mã ở chế độ CBC là không an toàn trước tấn công CPA, còn CTR vẫn an toàn", "Mã ở chế độ CBC là an toàn trước tấn công CPA, còn CTR thì không", "Cả 2 chế độ mã là an toàn trước tấn công CPA"],
+            "a" : [1]
+        },
+        {
+            "q" : "Giả sử khi sử dụng chế độ CBC và CTR, giá trị IV được xác định bằng cách mã hóa giá trị thời gian hiện tại của hệ thống. Phát biểu nào sau đây là đúng?",
+            "o" : ["Mã ở chế độ CBC là không an toàn trước tấn công CPA, còn CTR vẫn an toàn", "Mã ở chế độ CBC là an toàn trước tấn công CPA, còn CTR thì không", "Cả 2 chế độ mã là an toàn trước tấn công CPA", "Cả 2 chế độ mã không an toàn trước tấn công CPA"],
+            "a" : [3]
+        },
+        {
+            "q" : "Nếu sử dụng mật mã AES ở chế độ CBC, để xác suất tấn công CPA là không đáng kể thì sau khi mã hóa 2^x khối phải đổi khóa. Giá trị x là bao nhiêu?",
+            "o" : ["23", "24", "25", "26"],
+            "a" : [2]
+        }
+    ],
+    "quiz6": [
+        {
+            "q" : "Trong thuật toán sinh khóa RSA, cho p = 5, q= 7. Giá trị khóa công khai {e, n} có thể lựa chọn là bao nhiêu? (Chọn tất cả đáp án đúng)",
+            "o" : ["{9, 35}", "{11, 35}", "{13, 35}", "{15, 35}", "{17, 35}"],
+            "a" : [2,3,5]
+        },
+        {
+            "q" : "Trong hệ mật RSA, giả sử giá trị khóa công khai là {37, 77}. Giá trị d của khóa cá nhân là bao nhiêu?",
+            "o" : ["11", "12", "13", "14"],
+            "a" : [3]
+        },
+        {
+            "q" : "Trong hệ mật RSA, giả sử giá trị khóa công khai là (7, 55). Nếu bản gốc M = 8 thì giá trị bản mã C là bao nhiêu?",
+            "o" : ["1", "2", "3", "4"],
+            "a" : [2]
+        },
+        {
+            "q" : "Ưu điểm của phương pháp mã hóa RSA-OEAP so với phương pháp RSA gốc là gì?",
+            "o" : ["An toàn hơn", "Có thể mã hóa bản tin có độ dài bất kỳ", "Tốc độ thực hiện nhanh hơn", "Tất cả các đáp án trên"],
+            "a" : [1]
+        },
+        {
+            "q" : "Để chống lại các hành vi nghe lén trong quá trình truyền tin tới phía nhận, phía gửi có thể thực hiện bằng một trong những cách nào sau đây?",
+            "o" : ["Mã hóa bằng thuật toán AES với khóa đã chia sẻ trước", "Mã hóa bằng thuật toán RSA với khóa cá nhân của người gửi", "Mã hóa bằng thuật toán RSA với khóa công khai của người nhận", "Mã hóa bằng thuật toán RSA với khóa công khai của người gửi", "Mã hóa bằng thuật toán RSA với khóa cá nhân của người nhận"],
+            "a" : [1,3]
+        },
+        {
+            "q" : "Hệ mật mã nào sau đây sử dụng khóa mã hóa và giải mã khác nhau?",
+            "o" : ["AES", "DES", "3DES", "RSA"],
+            "a" : [4]
+        },
+        {
+            "q" : "Ưu điểm của mật mã khóa công khai so với mật mã khóa đối xứng là gì?",
+            "o" : ["Tốc độ nhanh hơn", "Không thể bị tấn công vét cạn", "Không cần kênh bí mật để trao đổi khóa mã hóa", "An toàn hơn"],
+            "a" : [3]
+        }
+    ],
+    "quiz7": [
+        {
+            "q" : "Một hệ thống bán hàng cung cấp tính năng cho phép người dùng tính giá trị MAC cho đơn hàng với khóa bí mật chỉ do người dùng biết. Người sử dụng lưu lại giá trị MAC và khóa này. Sử dụng mã MAC trong trường hợp này có tác dụng gì với người dùng?",
+            "o" : ["Khẳng định đơn hàng do chính người dùng tạo ra", "Khẳng định đơn hàng không bị người khác sửa đổi", "Nội dung đơn hàng là bí mật", "Khi dữ liệu trên máy chủ bị mất, người dùng có thể cung cấp lại nội dung đơn hàng"],
+            "a" : [1,2]
+        },
+        {
+            "q" : "Trong các hệ thống truyền tin, tại sao sử dụng hàm MAC không mang lại khả năng chống từ chối?",
+            "o" : ["Các bên cùng biết khóa để tạo giá trị MAC", "Có thể tìm ra các bản tin có cùng giá trị MAC", "Không thể xác định được nội dung bản tin gốc từ giá trị MAC", "Tất cả các lý do trên"],
+            "a" : [1]
+        },
+        {
+            "q" : "Tại sao hàm MAC phải được thiết kế để rất khó tìm ra hai bản tin có mã MAC giống nhau?",
+            "o" : ["Kẻ tấn công không thể thay thế nội dung được bản tin gốc", "Kẻ tấn công không thể xác định được nội dung bản tin gốc", "Để kích thước đầu ra là không đổi với mọi bản tin", "Giảm chi phí tính toán"],
+            "a" : [1]
+        },
+        {
+            "q" : "Ký hiệu E là hàm mã hóa, D là hàm giải mã, S là hàm tính giá trị MAC, V là hàm kiểm tra MAC. Nếu nhận được bản tin có cấu trúc E(k1, m) || t, trong đó t = S(k2, E(k1, m)) thì xử lý bản tin này như thế nào?",
+            "o" : ["Giải mã D(k1, E(m) || t), sau đó kiểm tra V(k2, m, t)", "Kiểm tra V(k2, E(k1, m), t), sau đó giải mã D(k1, E(m)) nếu V = true", "Giải mã D(k1, E(m)), sau đó kiểm tra V(k2, m, t)"],
+            "a" : [2]
+        },
+        {
+            "q" : "Giả sử E là hàm mã hóa ở chế độ CBC, S là hàm tính giá trị MAC. Sơ đồ mật mã nào sau đây luôn chống lại được tấn công CCA?",
+            "o" : ["E(k1, m || S(k2, m))", "E(k1, m) || S(k2, m)", "E(k1, m) || S(k1, E(k1, m))", "E(k1, m) || S(k2, E(k1, m))"],
+            "a" : [4]
+        },
+        {
+            "q" : "Giả sử bản tin m có kích thước là 2 khối, m1 và m2. Alice mã hóa bản tin m ở chế độ ECB thành bản tin c có 2 khối, c1 và c2. Sau đó Alice tạo mã xác thực t = F(k, c) và gửi c || t cho Bob. Hàm F() nào sau đây cho phép Bob phát hiện bản tin nhận được đã bị sửa đổi bởi kẻ tấn công? Trong đó hàm S là hàm MAC an toàn.",
+            "o" : ["F(k, c) = S(k, c1) || S(k, c2)", "F(k, c) = S(k, c1 || c2)", "F(k, c) = S(k, c2 || c1)", "F(k, c) = S(k, S(k, c1))", "F(k, c) = S(k, c1 XOR c2)"],
+            "a" : [2,3]
+        }
+    ],
+    "quiz8": [
+        {
+            "q" : "Giả sử H(m) là một hàm băm mật mã an toàn. Người ta muốn tạo ra một hàm băm mới H'(x). Cách thiết kế hàm băm nào sau đây thỏa mãn là hàm 1 chiều?",
+            "o" : ["H'(m) = m*m;", "H'(m) = H(H(m))", "H'(m) = 1/2 số bit đầu tiên của m", "H'(m) = H(m) mod 100", "H'(m) = pow(g, m) mod p, trong đó pow() là hàm lũy thừa, p là số nguyên tố và g là giá trị ngẫu nhiên", "H'(m) = H(m) || \"end\""],
+            "a" : [2,3,4,5,6]
+        },
+        {
+            "q" : "Giả sử H(m) là một hàm băm mật mã an toàn. Người ta muốn tạo ra một hàm băm mới H'(x). Cách thiết kế hàm băm nào sau đây có khả năng chống đụng độ?(Chọn tất cả đáp án đúng)",
+            "o" : ["H'(m) = m*m;", "H'(m) = H(H(m))", "H'(m) = 1/2 số bit đầu tiên của m", "H'(m) = H(m) mod 100", "H'(m) = pow(g, m) mod p, trong đó pow() là hàm lũy thừa, p là số nguyên tố và g là giá trị ngẫu nhiên", "H'(m) = H(m) || \"end\""],
+            "a" : [2,6]
+        },
+        {
+            "q" : "Giả sử Alice và Bob đã chia sẻ một khóa bí mật k. Alice gửi cho Bob bản tin E(k, m) || H(E(k, m)), trong đó E là mã hóa AES-CBC còn H là hàm băm mật mã an toàn. Sơ đồ này thỏa mãn (những)yêu cầu nào?",
+            "o" : ["Tính bí mật (Confidentiality)", "Tính xác thực toàn vẹn (Integrity)", "Tính xác thực danh tính (Authenticity)", "Không thỏa mãn yêu cầu nào"],
+            "a" : [1]
+        },
+        {
+            "q" : "Giả sử Alice và Bob đã chia sẻ một khóa bí mật k. Alice gửi cho Bob bản tin E(k, m) || H(k || E(k, m)), trong đó E là mã hóa AES-CBC còn H là hàm băm SHA-1. Sơ đồ này thỏa mãn yêu cầu nào?",
+            "o" : ["Tính bí mật (Confidentiality)", "Tính xác thực toàn vẹn (Integrity)", "Tính xác thực danh tính (Authenticity)", "Tất cả các yêu cầu"],
+            "a" : [1]
+        },
+        {
+            "q" : "Một hàm băm mật mã an toàn có kích thước đầu ra là 50 bit. Chọn trước 1 giá trị băm là x thì xác suất xuất hiện của bản tin m có H(m) = x là bao nhiêu?",
+            "o" : ["2^(-25)", "2^(-50)", "0.02"],
+            "a" : [2]
+        },
+        {
+            "q" : "Một hàm băm mật mã an toàn có kích thước đầu ra là 60 bit. Nếu chúng ta có hệ thống máy tính có khả năng thực hiện hàm băm trong 1 ns (nanosecond) thì mất bao nhiêu năm để tìm ra được bản tin m sao cho H(m) = x với x chọn trước?(Ghi đáp án là phần nguyên)",
+            "o" : ["33", "34", "35", "36"],
+            "a" : [4]
+        },
+        {
+            "q" : "Khi tấn công dựa trên nghịch lý ngày sinh vào hàm băm SHA-1 để tìm ra các bản tin đụng độ, theo kỳ vọng thì số lượng bản tin phải kiểm tra sẽ giảm đi bao nhiêu lần?",
+            "o" : ["2^40", "2", "80", "2^80", "2^79"],
+            "a" : [5]
+        },
+        {
+            "q" : "Một sơ đồ mật mã sử dụng chế độ CBC với khóa k = (k1, k2). Trong đó, k1 được sử dụng để tạo giá trị IV = HMAC(k1, m) còn k2 được sử dụng để mã hóa bản tin E(k2, m). Nếu khóa k được dùng nhiều lần, phát biểu nào sau đây là đúng?",
+            "o" : ["Sơ đồ này không chống được tấn công CCA nhưng chống được tấn công CPA", "Sơ đồ này không chống được tấn công CPA", "Sơ đồ này chống được tấn công CCA", "Sơ đồ này không chống được tấn công KPA"],
+            "a" : [2]
+        },
+        {
+            "q" : "Khóa nào trong cặp khóa được sử dụng để tạo chữ ký số dùng mật mã khóa công khai?",
+            "o" : ["Khóa công khai của người gửi", "Khóa công khai của người nhận", "Khóa riêng của người gửi", "Khóa riêng của người nhận"],
+            "a" : [3]
+        },
+        {
+            "q" : "Chữ ký số cung cấp được (những) dịch vụ gì mà các hàm MAC không có?",
+            "o" : ["Chống từ chối (Nonrepudiation)", "Chống tấn công phát lại", "Toàn vẹn (Integrity)", "Xác thực (Authenticity)"],
+            "a" : [1]
+        }
+    ],
+    "quiz9": [
+        {
+            "q" : "Giá trị khóa nhóm trong sơ đồ trao đổi khóa Diffie-Hellman là (17, 6). Nếu chọn X = 8 thì Y là bao nhiêu?",
+            "o" : ["16", "17", "18", "19"],
+            "a" : [1]
+        },
+        {
+            "q" : "Giá trị khóa nhóm trong sơ đồ trao đổi khóa Diffie-Hellman là (17, 6). Nếu Alice chọn XA = 11 và nhận được YB = 12 từ Bob thì giá trị khóa bí mật mà Alice chọn được là bao nhiêu?",
+            "o" : ["5", "6", "7", "8"],
+            "a" : [2]
+        },
+        {
+            "q" : "Phát biểu nào sau đây là đúng về sơ đồ trao đổi khóa Diffie-Hellman?",
+            "o" : ["Sơ đồ dùng để phân phối khóa công khai một cách tin cậy", "Kẻ tấn công không thể xác định được giá trị riêng X từ giá trị công khai Y", "Nếu kẻ tấn công lấy cắp được giá trị bí mật X, chúng tính được giá trị khóa bí mật Ks của phiên hiện tại", "Nếu kẻ tấn công lấy cắp được giá trị bí mật X, chúng tính được các giá trị khóa đối xứng Ks của các phiên cũ", "Nếu kẻ tấn công lấy cắp được giá trị bí mật X, chúng tính được các giá trị khóa đối xứng Ks của các phiên sắp tới khi mà khóa nhóm còn chưa đổi", "Sơ đồ không an toàn do có lỗ hổng các bên không xác thực giá trị công khai Y nhận được"],
+            "a" : [2,3,6]
+        },
+        {
+            "q" : "Trong sơ đồ trao đổi khóa Needham-Schroeder, các giá trị dùng 1 lần (nonce) được sử dụng cho mục đích gì?",
+            "o" : ["Chống tấn công phát lại (Reply attack)", "Khẳng định hai bên sử dụng khóa giống nhau", "Chống tấn công CPA vào hàm mã hóa", "Là nhân (seed) để KDC sinh khóa phiên"],
+            "a" : [1,2]
+        },
+        {
+            "q" : "Trong sơ đồ trao đổi khóa Needham-Schroeder, tại sao cần dùng hàm f(x) để biến đổi giá trị nonce N2?",
+            "o" : ["Chống tấn công phát lại (Replay attack)", "Chống tấn công phản xạ (Reflection attack)", "Chống tấn công CPA vào hàm mã hóa", "Sinh giá trị khóa phiên"],
+            "a" : [2]
+        },
+        {
+            "q" : "Trong sơ đồ trao đổi khóa cải tiến của Denning, nhãn thời gian T được sử dụng để làm gì?",
+            "o" : ["Chống tấn công phát lại (Reply attack)", "Chống tấn công phản xạ (Reflection attack)", "Sinh giá trị IV (Initial Vector) cho các hàm mã hóa ở chế độ CTR", "Là nhân (seed) để KDC sinh khóa phiên"],
+            "a" : [1]
+        },
+        {
+            "q" : "Bên cạnh việc sử dụng các cơ chế mật mã một cách an toàn, những thách thức khác cần giải quyết khi triển khai sơ đồ trao đổi khóa của Denning là gì?",
+            "o" : ["Đồng bộ đồng hồ giữa các bên", "Ước lượng thời gian trễ khi truyền tin và xử lý dữ liệu", "Cả 2 vấn đề trên"],
+            "a" : [3]
+        },
+        {
+            "q" : "Cải tiến của Kehne trong giao thức trao đổi khóa đã giải quyết vấn đề gì khi so sánh với sơ đồ của Denning?",
+            "o" : ["Đồng bộ đồng hồ giữa các bên", "Ước lượng thời gian trễ", "Cả 2 vấn đề trên"],
+            "a" : [1]
+        },
+        {
+            "q" : "Hạn chế chung của các giao thức phân phối khóa đối xứng dựa trên các hệ mật mã khóa đối xứng là gì?",
+            "o" : ["Không thỏa mãn yêu cầu về PFS (Perfect Forward Secrecy)", "Không có cơ chế xác thực thông điệp", "Số lượng khóa chính tăng theo hàm bậc 2"],
+            "a" : [1]
+        },
+        {
+            "q" : "Trong hệ thống PKI, thành phần nào có chức năng chính là phát hành và quản lý chứng thư số?",
+            "o" : ["Certificate Authority", "Certificate Repository", "Registration Authority"],
+            "a" : [1]
+        },
+        {
+            "q" : "Trường nào trong chứng thư số X.509 được sử dụng để khẳng định chứng thư không bị giả mạo?",
+            "o" : ["Validity", "Signature", "Issuer", "Subject"],
+            "a" : [2]
+        },
+        {
+            "q" : "Chứng thư số là hợp lệ nếu nó thỏa mãn (những) điều kiện nào?",
+            "o" : ["Tên thực thể trùng với thông tin trong trường Subject", "CA phát hành chứng thư số là đáng tin cậy", "Thời điểm kiểm tra nằm trong hạn sử dụng", "Chữ ký trên chứng thư số là hợp lệ", "Chứng thư số chưa bị thu hồi"],
+            "a" : [1,2,3,4,5]
+        }
+    ],
+    "quiz10": [
+        {
+            "q" : "Những nguyên nhân nào sau đây làm giảm tính an toàn và tin cậy của hệ xác thực bằng mật khẩu?",
+            "o" : ["Người dùng không thể nhớ được mật khẩu phức tạp", "Không sử dụng cơ chế mật mã để bảo vệ đường truyền khi người dùng truy cập", "Người dùng sử dụng mật khẩu giống nhau cho nhiều tài khoản", "Không có cơ chế để người dùng xác minh đang truy cập vào đúng hệ thống", "Hệ thống không sử dung cơ chế hạn chế số lần đăng nhập sai"],
+            "a" : [1,2,3,4,5]
+        },
+        {
+            "q" : "Mật khẩu là yếu tố xác thực thuộc loại nào?",
+            "o" : ["Yếu tố tri thức", "Yếu tố tài sản", "Yếu tố sinh trắc"],
+            "a" : [1]
+        },
+        {
+            "q" : "Mục đích chính khi áp dụng hàm băm lên mật khẩu người dùng trước khi lưu trữ là gì?",
+            "o" : ["Tiết kiệm dung lượng bộ nhớ để lưu trữ mật khẩu", "Chống tấn công phát lại", "Ngăn cản kẻ tấn công biết được mật khẩu dạng bản rõ", "Giảm độ phức tạp tính toán khi mã hóa bảo vệ mật khẩu bằng hệ mật khóa bất đối xứng"],
+            "a" : [3]
+        },
+        {
+            "q" : "Mục đích của việc thêm giá trị salt ngẫu nhiên vào mật khẩu trước khi băm là gì?",
+            "o" : ["Giảm thời gian tính toán", "Giảm thiểu rủi ro tấn công vét cạn", "Giảm thiểu rủi ro tấn công từ điển/tấn công cầu vồng", "Giảm tốc độ dò tìm mật khẩu"],
+            "a" : [3]
+        },
+        {
+            "q" : "Trong các cách thức sau mật khẩu được lưu trữ như thế nào là an toàn nhất?",
+            "o" : ["MD5(Password)", "MD5(Password, Salt)", "SHA-1(Password, Salt)", "SHA-1(SHA-256(Password))", "SHA-256(Password, Salt)", "SHA-256(Password, Salt, Pepper)"],
+            "a" : [6]
+        },
+        {
+            "q" : "Biện pháp nào sau đây được sử dụng để làm giảm tốc độ dò tìm mật khẩu của kẻ tấn công?",
+            "o" : ["Quy định độ dài tối thiểu cho mật khẩu", "Yêu cầu hoàn thành CAPTCHA mỗi khi đăng nhập", "Quy định các dạng ký tự phải có mặt trong mật khẩu", "Khóa tài khoản trong một khoảng thời gian nhất định sau một số lần đăng nhập sai", "Quy định thời hạn sử dụng mật khẩu"],
+            "a" : [2,4]
+        },
+        {
+            "q" : "Tại sao sử dụng phương pháp xác thực đa yếu tố nâng cao an toàn cho hệ xác thực bằng mật khẩu?",
+            "o" : ["Kẻ tấn công mất nhiều thời gian để vét cạn mật khẩu hơn", "Mật khẩu được lưu trữ an toàn hơn", "Tài sản của người dùng khó bị đánh cắp hơn", "Vân tay khó bị làm giả hơn", "Kẻ tấn công phải chiếm đoạt được tất cả các yếu tố xác thực"],
+            "a" : [5]
+        }
+    ],
+    "quiz11": [
+        {
+            "q" : "Ma trận điều khiển truy cập chứa những thông tin gì?",
+            "o" : ["Danh sách tài nguyên", "Danh sách người dùng", "Số lần người dùng được phép đăng nhập sai", "Những hoạt động người dùng dùng được làm", "Những hoạt động người dùng không được làm"],
+            "a" : [1,2,4]
+        },
+        {
+            "q" : "Khó khăn khi cài đặt ma trận điều khiển truy cập đầy đủ trong hệ thống là gì?",
+            "o" : ["Kích thước ma trận quá lớn", "Không thể liệt kê tất cả tài nguyên trong hệ thống", "Không thể liệt kê tất cả người dùng trong hệ thống", "Không thể định nghĩa được mọi hoạt đông cho người dùng thực hiện"],
+            "a" : [1]
+        },
+        {
+            "q" : "Tại sao cài đặt ma trận điều khiển truy cập đầy đủ trong hệ thống là không hiệu quả?",
+            "o" : ["Ma trận điều khiển truy cập thường là ma trận thưa", "Thuật toán tìm kiếm thực hiện trên ma trận là phức tạp hơn", "Cập nhật các giá trị cho các phần tử trong ma trận mất nhiều thời gian hơn"],
+            "a" : [1]
+        },
+        {
+            "q" : "Phát biểu nào sau đây là đúng về danh sách điều khiển truy cập (ACL)?",
+            "o" : ["Biểu diễn cột của ma trận điều khiển truy cập", "Biểu diễn hàng của ma trận điều khiển truy cập", "Khi người dùng truy cập vào một đối tượng tài nguyên nào đó, tìm kiếm định danh của người dùng trong ACL để xác định quyền của người dùng với tài nguyên.", "Khi người dùng truy cập vào một đối tượng tài nguyên nào đó, tìm kiếm định danh của tài nguyên trong ACL để xác định quyền của người dùng với tài nguyên."],
+            "a" : [1,3]
+        },
+        {
+            "q" : "Phát biểu nào sau đây là đúng về danh sách năng lực (C-List)?",
+            "o" : ["Được gắn với một đối tượng tài nguyên cụ thể", "Được gắn với một người dùng cụ thể", "Khi người dùng truy cập vào một đối tượng tài nguyên nào đó, tìm kiếm định danh của tài nguyên trong C-List để xác định quyền của người dùng với tài nguyên.", "Không hỗ trợ chia sẻ quyền truy cập từ người dùng này sang người dùng khác"],
+            "a" : [2,3]
+        },
+        {
+            "q" : "Alice đến rạp chiếu phim và mua vé để xem một bộ phim nào đó. Alice xuất trình vé cho người soát vé và được bước vào phòng chiếu. Vé xem phim là một ví dụ của_______?",
+            "o" : ["Ma trận điều khiển truy cập", "Danh sách điều khiển truy cập", "Danh sách năng lực", "Mật khẩu"],
+            "a" : [3]
+        },
+        {
+            "q" : "Trong hệ thống sử dụng mô hình điều khiển truy cập tùy nghi(DAC), Alice chia sẻ quyền đọc file secret.dat cho Bob. Có cách nào để đảm bảo Charlie không đọc được file này không?",
+            "o" : ["Có", "Không"],
+            "a" : [2]
+        },
+        {
+            "q" : "Trong mô hình Bell-Lapadula, có các nhãn bảo mật cho người dùng như sau (TS,{An, Bình}), (S,{Cường}). Các nhãn bảo mật cho dữ liệu là (TS, {File1, File2}), (S, {File3}). Ma trận điều khiển truy cập nào sau đây mô tả đúng quyền truy cập của người dùng theo các nhãn này. Kí hiệu r là quyền đọc, w là quyền ghi. Quyền truy cập của mỗi người dùng trên File 1 là gì?",
+            "o" : ["An: r, Bình: rw, Cường: w", "An: rw, Bình: rw, Cường: w", "An: w, Bình: Không có quyền truy cập, Cường: w", "An: Không có quyền truy cập, Bình: w, Cường: rw"],
+            "a" : [2]
+        },
+        {
+            "q" : "Trong mô hình Biba, có các nhãn bảo mật cho người dùng như sau (Crucial,{An}), (Very Important,{Cường}), (Important,{Bình}). Các nhãn bảo mật cho dữ liệu là (Crucial, {File1, File2}), (Very Important, {File3}). Ma trận điều khiển truy cập nào sau đây mô tả đúng quyền truy cập của người dùng theo các nhãn này. Kí hiệu r là quyền đọc, w là quyền ghi. Quyền truy cập của mỗi người dùng trên File 3 là gì?",
+            "o" : ["An: w, Bình: r, Cường: rw", "An: rw, Bình: rw, Cường: w", "An: w, Bình: Không có quyền truy cập, Cường: w", "An: Không có quyền truy cập, Bình: w, Cường: rw"],
+            "a" : [1]
+        }
+    ],
+    "quiz12": [
+        {
+            "q" : "Địa chỉ các vùng nhớ nào là thay đổi khi tiến trình thực thi?",
+            "o" : ["text", "data", "stack", "heap"],
+            "a" : [3,4]
+        },
+        {
+            "q" : "Khi chương trình có lỗ hổng tràn bộ đệm, rủi ro an toàn bảo mật nào có thể xảy ra?",
+            "o" : ["Dữ liệu trên bộ nhớ máy tính có thể bị ghi đè", "Luồng thực thi của chương trình bị thay đổi", "Kẻ tấn công có thể thực thi được một chương trình tùy ý", "Chương trình bị kết thúc bất thường"],
+            "a" : [1,2,3,4]
+        },
+        {
+            "q" : "Khi tấn công tràn bộ đệm xảy ra trong bộ nhớ stack, những vùng nhớ nào có thể bị ghi đè dữ liệu?",
+            "o" : ["Tất cả ô nhớ trong bộ nhớ có địa chỉ nhỏ hơn địa chỉ bộ đệm", "Tất cả ô nhớ trong bộ nhớ có địa chỉ lớn hơn địa chỉ bộ đệm", "Tất cả ô nhớ trong stack có địa chỉ nhỏ hơn địa chỉ bộ đệm", "Tất cả ô nhớ trong stack có địa chỉ lớn hơn địa chỉ bộ đệm", "Tất cả vùng nhớ stack"],
+            "a" : [2]
+        },
+        {
+            "q" : "Trong đoạn chương trình viết bằng ngôn ngữ C như sau. Dòng mã nguồn nào có thể có lỗi tràn bộ đệm?<br>char buff1[1024];<br>char buff1[128];<br>gets(buff2);<br>strcpy(buff1, buff2);",
+            "o" : ["1", "2", "3", "4"],
+            "a" : [3,4]
+        },
+        {
+            "q" : "Trong hàm viết bắt ngôn ngữ C dưới đây, nếu lỗi tràn bộ đệm xảy ra với biến cục bộ buff1 thì các giá trị nào sẽ bị ghi đè?<br>void func(char arg1[], int arg2)<br>{<br>int loc1;<br>char buff1[128];<br>char buff2[64];<br>}",
+            "o" : ["arg1", "arg2", "loc1", "buff2"],
+            "a" : [1,2,3]
+        },
+        {
+            "q" : "Trong hàm viết bằng ngôn ngữ C dưới đây, lỗi tràn bộ đệm xảy ra khi nào?<br>void func(char buff1[], char buff2[])<br>{<br>int n = strlen(buff2);<br>if (n < 1024)<br> strcpy(buff1, buff2);<br>}",
+            "o" : ["buff2 có kích thước lớn hơn 1024 byte", "buff1 có kích thước nhỏ hơn buff2", "buff1 có kích thước nhỏ hơn 1023 và buff1 có kích thước nhỏ hơn buff2", "buff1 có kích thước nhỏ hơn 1024 byte", "Hàm này không có lỗ hổng tràn bộ đệm"],
+            "a" : [2]
+        }
+    ],
+    "quiz13": [
+        {
+            "q" : "Kích hoạt chế độ non-executable stack không thể phòng chống được các hành vi tấn công tràn bộ đệm nào sau đây?",
+            "o" : ["Thực thi mã nguồn trong vùng nhớ stack", "Thực thi hàm thư viện chuẩn cung cấp lời gọi hệ thống", "Thực thi các đoạn mã nguồn đã có sẵn trong bộ nhớ", "Ghi đè dữ liệu vào vùng nhớ khác", "Thực thi mã nguồn trong vùng nhớ heap"],
+            "a" : [2,3,4,5]
+        },
+        {
+            "q" : "Cho hàm viết bằng chương trình C như sau. Khai báo biến canh giữ đặt ở dòng nào để phòng chống được các hành vi tấn công khai thác lỗ hổng tràn bộ đệm?<br>1.<br>2. int n;<br>3.<br>4. float x;<br>5.<br>6. int array[64];<br>7.<br>8. float array2[32];<br>9.",
+            "o" : ["1", "3", "5", "7", "9"],
+            "a" : [3,4]
+        },
+        {
+            "q" : "Cho hàm viết bằng chương trình C như sau. Lỗ hổng tràn bộ đệm có thể sửa như thế nào?<br>void func(char buff1[], char buff2[])<br>{<br>int n = strlen(buff2);<br>if (n < 1024)<br> strcpy(buff1, buff2);<br>}",
+            "o" : ["Xoá dòng lệnh số 3", "Xóa dòng lệnh số 2", "Sửa điều kiện dòng lệnh số 4 thành if (strlen(buff1) > strlen(buff2))", "Sửa điều kiện dòng lệnh số 4 thành if (n <= 1024)"],
+            "a" : [3]
+        },
+        {
+            "q" : "Tính năng ASLR(Address Space Layout Randomization) trên các hệ điều hành là gì?",
+            "o" : ["Sử dụng địa chỉ ngẫu nhiên cho các vùng nhớ trong bộ nhớ ảo của tiến trình", "Lưu trữ các file hệ thống ở vị trí ngẫu nhiên trên ổ cứng mỗi khi khởi động", "Cất các thông tin của lời gọi hàm vào vị trí ngẫu nhiên trong stack", "Tất cả các đáp án"],
+            "a" : [1]
+        },
+        {
+            "q" : "Giả sử khai báo biến canh giữ cannary được khai báo là kiểu số nguyên 4 byte. Kẻ tấn công phải thử trung bình bao nhiêu trường hợp để có thể tấn công thành công?",
+            "o" : ["256", "2^31", "2^32", "4", "43"],
+            "a" : [2]
+        },
+        {
+            "q" : "Cho đoạn chương trình viết bằng C sau đây. Lỗ hổng xâu định dạng có thể được sửa như thế nào?<br>char name[64];<br>gets(name);<br>printf(name);",
+            "o" : ["Sửa dòng lệnh số 3 thành if(strlen(name) > 0) printf(name);", "Sửa dòng lệnh số 2 thành fgets(name, 1024, stdin);", "Sửa dòng lệnh số 3 thành printf(\"%s\", name);", "Xóa dòng lệnh số 3", "Xóa dòng lệnh số 2"],
+            "a" : [3]
+        },
+        {
+            "q" : "Trường hợp nào sau đây không truy cập bộ nhớ an toàn về không gian?",
+            "o" : ["Ghi đè dữ liệu sang vùng nhớ ngoài vùng nhớ chứa biến", "Truy cập vào các ô nhớ trong vùng nhớ stack của hàm", "Truy cập vào các ô nhớ trong vùng nhớ stack bên ngoài hàm", "Truy cập vào vùng nhớ heap"],
+            "a" : [1]
+        },
+        {
+            "q" : "Trường hợp nào sau đây không truy cập bộ nhớ an toàn về thời gian?",
+            "o" : ["Truy cập vào biến chưa được khởi tạo", "Truy cập vào vùng nhớ chưa được cấp phát", "Hàm không có kết quả trả về", "Hàm không có tham số vào"],
+            "a" : [1,2]
+        },
+        {
+            "q" : "Tiền điều kiện của hàm sau là gì?<br>void copyHead(char *src, char *dst, int n)<br>{<br>for (int i =0; i < n; i++)<br> dst + i = src + 1;<br>}",
+            "o" : ["src != null", "dst != null", "n > 0", "n <= strlen(src)", "n <= strlen(dst)", "strlen(dst) >= strlen(src)"],
+            "a" : [1,2,4,5]
+        }
+    ],
+    "quiz14": [
+        {
+            "q" : "Sâu máy tính khác với virus máy tính ở điểm nào?",
+            "o" : ["Sâu máy tính không cần ký sinh vào một chương trình", "Sâu máy tính có thể tự động thực thi mà không cần hành động kích hoạt của người dùng", "Sâu máy tính có thể tự che giấu hoạt động của chính nó", "Sâu máy tính không có khả năng tự gây hại mà phải chờ lệnh tấn công của tin tặc"],
+            "a" : [1,2]
+        },
+        {
+            "q" : "Loại virus nào có khả năng tự mã hóa lại mã nguồn của nó khi lây nhiễm?",
+            "o" : ["Polymorphic virus", "Macro virus", "Ransomware", "Boot sector virus", "Rootkit"],
+            "a" : [1]
+        },
+        {
+            "q" : "Loại virus nào có khả năng tự thay đổi mã thực thi mỗi khi lây nhiễm?",
+            "o" : ["Rootkit", "Macro virus", "Metamorphic virus", "Polymorphic virus"],
+            "a" : [3]
+        },
+        {
+            "q" : "Phương pháp phát hiện mã độc nào có hiệu quả để phát hiện metamorphic virus?",
+            "o" : ["Phát hiện dựa trên dấu hiệu", "Phát hiện dựa trên kiểm tra checksum", "Phát hiện dựa trên phân tích hoạt động", "Gắn cờ cho các đoạn mã không quen thuộc"],
+            "a" : [3,4]
+        }
+    ]
+}
