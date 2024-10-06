@@ -30,6 +30,9 @@
    
 
 -----------------------------------------------------------------------------------*/
+
+const API_URL = 'https://fcf1-104-28-222-74.ngrok-free.app/api';
+
 function menuToggle() {
   const toggleMenu = document.querySelector(".menu");
   toggleMenu.classList.toggle("active");

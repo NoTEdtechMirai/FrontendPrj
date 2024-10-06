@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Librarian Dashboard</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon/boy.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../dashboard/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/style_ds.css" />
+</head>
+
+<body>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div>
+                <div class="brand-logo d-flex align-items-center justify-content-between"
+                    style="display: flex; justify-content: center !important;">
+                    <a href="./index.html" class="text-nowrap logo-img">
+                        <img src="../assets/img/logo/logo5.png" width="auto" alt="" />
+                    </a>
+                    <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                        <i class="ti ti-x fs-8"></i>
+                    </div>
+                </div>
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                    <ul id="sidebarnav">
+                        <li class="nav-small-cap">
+                            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                            <span class="hide-menu">Chung</span>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link active" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-layout-dashboard"></i>
+                                </span>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-user-plus"></i>
+                                </span>
+                                <span class="hide-menu">Tài khoản</span>
+                            </a>
+                        </li>
+                        <li class="nav-small-cap">
+                            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                            <span class="hide-menu">Thủ thư</span>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-cards"></i>
+                                </span>
+                                <span class="hide-menu">Lớp</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-article"></i>
+                                </span>
+                                <span class="hide-menu">Tài liệu</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-alert-circle"></i>
+                                </span>
+                                <span class="hide-menu">Gửi yêu cầu</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!--  Sidebar End -->
+        <!--  Main wrapper -->
+        <div class="body-wrapper">
+            <!--  Header Start -->
+            <header class="app-header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-block d-xl-none">
+                            <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse"
+                                href="javascript:void(0)">
+                                <i class="ti ti-menu-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end mt-3">
+                            <button style="background: transparent; border: 0px">
+                                <img src="../assets/img/logo/bell.svg" alt="search logo" />
+                            </button>
+                            <div class="user-menu">
+                                <div class="action">
+                                    <div class="profile" onclick="menuToggle()">
+                                        <img src="../assets/img/avatar/Avator-3.png" />
+                                        <div class="profile-info">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h7><strong>User Name</strong></h7>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p>Thủ thư</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu">
+                                        <ul>
+                                            <li>
+                                                <img src="../assets/img/icon/user.png" /><a href="#">Tài khoản</a>
+                                            </li>
+                                            <li>
+                                                <img src="../assets/img/icon/edit.png" /><a href="#">Sửa thông tin</a>
+                                            </li>
+                                            <li>
+                                                <img src="../assets/img/icon/settings.png" /><a href="#">Cài đặt</a>
+                                            </li>
+                                            <li>
+                                                <img src="../assets/img/icon/log-out.png" /><a href="#">Đăng xuất</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!--  Header End -->
+            <div class="container-fluid" style="padding-top: 100px;">
+                <!--  Row 1 -->
+                <div class="row">
+                    <div class="col-lg-8 d-flex align-items-strech">
+                        <div class="card w-100">
+                            <div class="card-body" style="margin: 10px 10px -40px 0px !important;">
+                                <div class="d-sm-flex d-block align-items-center justify-content-between mb-9"
+                                    style="width: 100%;">
+                                    <div class="row" style="width: 100%;">
+                                        <div class="col-lg-3">
+                                            <h5 class="card-title fw-semibold"
+                                                style="margin-bottom: 20px; display: flex; justify-content: center !important; color: #ff465e;">
+                                                Nguyễn Văn A</h5>
+                                            <div
+                                                style="display: flex !important; justify-content: center !important; width: 100%;">
+                                                <img src="../assets/img/avatar/Avator-3.png" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <form class="mt-4">
+                                                <fieldset disabled>
+                                                    <div class="row">
+                                                        <div class="col-lg-5">
+                                                            <div class="mb-3">
+                                                                <label for="disabledTextInput" class="form-label">Họ và
+                                                                    tên</label>
+                                                                <input type="text" id="disabledTextInput"
+                                                                    class="form-control" placeholder="Nguyễn Văn A">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="mb-3">
+                                                                <label for="disabledTextInput" class="form-label">Vai
+                                                                    trò</label>
+                                                                <input type="text" id="disabledTextInput"
+                                                                    class="form-control" placeholder="Thủ thư">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="mb-3">
+                                                                <label for="disabledTextInput" class="form-label">Ngày
+                                                                    sinh</label>
+                                                                <input type="text" id="disabledTextInput"
+                                                                    class="form-control" placeholder="14/10/2002">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="mb-3">
+                                                                <label for="disabledTextInput" class="form-label">Lớp
+                                                                    chủ nhiệm</label>
+                                                                <input type="text" id="disabledTextInput"
+                                                                    class="form-control" placeholder="12A1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="mb-3">
+                                                                <label for="disabledTextInput" class="form-label">Mã
+                                                                    số</label>
+                                                                <input type="text" id="disabledTextInput"
+                                                                    class="form-control" placeholder="20120123">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="mb-3">
+                                                                <label for="disabledTextInput"
+                                                                    class="form-label">Email</label>
+                                                                <input type="text" id="disabledTextInput"
+                                                                    class="form-control"
+                                                                    placeholder="nguyenvana@gmail.com">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5">
+                                                            <div class="mb-3"
+                                                                style="display: inline-flex; align-items: center;">
+                                                                <label for="disabledTextInput" class="form-label"
+                                                                    style="margin-right: 10px; width: max-content !important;">Tài
+                                                                    liệu đã đăng</label>
+                                                                <input type="text" id="disabledTextInput"
+                                                                    class="form-control" placeholder="20"
+                                                                    style="width:30%">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7">
+                                                            <div class="mb-3"
+                                                                style="display: inline-flex; align-items: center;">
+                                                                <label for="disabledTextInput" class="form-label"
+                                                                    style="margin-right: 10px; width: max-content !important;">Tài
+                                                                    liệu đã phê duyệt</label>
+                                                                <input type="text" id="disabledTextInput"
+                                                                    class="form-control" placeholder="20"
+                                                                    style="width:20%">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5">
+                                                            <div class="mb-3"
+                                                                style="display: inline-flex; align-items: center;">
+                                                                <label for="disabledTextInput" class="form-label"
+                                                                    style="margin-right: 10px; width: max-content !important;">Số
+                                                                    tiết trong tuần</label>
+                                                                <input type="text" id="disabledTextInput"
+                                                                    class="form-control" placeholder="20"
+                                                                    style="width:30%">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7">
+                                                            <div class="mb-3"
+                                                                style="display: inline-flex; align-items: center;">
+                                                                <label for="disabledTextInput" class="form-label"
+                                                                    style="margin-right: 10px; width: max-content !important;">Yêu
+                                                                    cầu đã được phê duyệt</label>
+                                                                <input type="text" id="disabledTextInput"
+                                                                    class="form-control" placeholder="20"
+                                                                    style="width:20%">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- Yearly Breakup -->
+                                <div class="card overflow-hidden">
+                                    <div class="card-body p-4">
+                                        <h5 style="display: flex; justify-content: center;"
+                                            class="card-title mb-9 fw-semibold">Mục tiêu hiện tại: <span>10</span></h5>
+                                        <div class="about-skill-wrapper" data-aos="fade-up"
+                                            style="margin-top: 0px !important;">
+                                            <div class="about-skill-pogressbar"
+                                                style="display: flex !important; justify-content: center !important; width: auto;">
+                                                <div class="round-wrapper">
+                                                    <div class="round round-1" data-value="0.80" data-size="200"
+                                                        data-thickness="15">
+                                                        <div class="round-text">
+                                                            <strong></strong>
+                                                        </div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card w-100">
+                                    <div class="card-body p-4">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="fw-normal mb-1">Tổng số học sinh</div>
+                                                <h4 class="fw-semibold mb-2">45/45</h4>
+                                            </div>
+                                            <div class="col-4">
+                                                <img src="../assets/img/icon/image 13.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card w-100">
+                                    <div class="card-body p-4">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="fw-normal mb-1">Tổng số tiết dạy</div>
+                                                <h4 class="fw-semibold mb-2">25/25</h4>
+                                            </div>
+                                            <div class="col-4">
+                                                <img src="../assets/img/icon/image 14.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card w-100">
+                                    <div class="card-body p-4">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="fw-normal mb-1">Tổng số yêu cầu</div>
+                                                <h4 class="fw-semibold mb-2">01/10</h4>
+                                            </div>
+                                            <div class="col-4">
+                                                <img src="../assets/img/icon/image 15.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 d-flex align-items-stretch">
+                                <div class="card w-100">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-semibold mb-4">Các tiết sắp tới</h5>
+                                        <div class="table-responsive2">
+                                            <table class="table text-nowrap mb-0 align-middle">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="border-bottom-0">
+                                                            <h5 class="fw-semibold mb-2">Tiết 1: Luyện từ và câu</h5>
+                                                            <div class="fw-normal mb-1">Tóm tắt: Dấu câu</div>
+                                                            <div class="fw-normal mb-1">⏰ 8:00 - 9:00</div>
+                                                        </td>
+                                                        <td class="border-bottom-0 text-center">
+                                                            <div class="col mb-1"><button class="btnx0">Xác nhận</button></div>
+                                                            <div class="col"><button class="btnx1">Gửi yêu cầu</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="border-bottom-0">
+                                                            <h5 class="fw-semibold mb-2">Tiết 2: Luyện từ và câu</h5>
+                                                            <div class="fw-normal mb-1">Tóm tắt: Dấu câu</div>
+                                                            <div class="fw-normal mb-1">⏰ 9:00 - 10:00</div>
+                                                        </td>
+                                                        <td class="border-bottom-0 text-center">
+                                                            <div class="col mb-1"><button class="btnx0">Xác nhận</button></div>
+                                                            <div class="col"><button class="btnx1">Gửi yêu cầu</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="border-bottom-0">
+                                                            <h5 class="fw-semibold mb-2">Tiết 2: Luyện từ và câu</h5>
+                                                            <div class="fw-normal mb-1">Tóm tắt: Dấu câu</div>
+                                                            <div class="fw-normal mb-1">⏰ 9:00 - 10:00</div>
+                                                        </td>
+                                                        <td class="border-bottom-0 text-center">
+                                                            <div class="col mb-1"><button class="btnx0">Xác nhận</button></div>
+                                                            <div class="col"><button class="btnx1">Gửi yêu cầu</button></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="card w-100">
+                            <div class="card-body p-4">
+                                <div class="mb-4">
+                                    <h5 class="card-title fw-semibold">Lịch sắp tới</h5>
+                                </div>
+                                <ul class="timeline-widget mb-0 position-relative mb-n5">
+                                    <li class="timeline-item d-flex position-relative overflow-hidden">
+                                        <div class="timeline-time text-dark flex-shrink-0 text-end">09:30</div>
+                                        <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                                            <span
+                                                class="timeline-badge border-2 border border-primary flex-shrink-0 my-8"></span>
+                                            <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                                        </div>
+                                        <div class="timeline-desc fs-3 text-dark mt-n1">Khai giảng năm học</div>
+                                    </li>
+                                    <li class="timeline-item d-flex position-relative overflow-hidden">
+                                        <div class="timeline-time text-dark flex-shrink-0 text-end">10:00 am</div>
+                                        <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                                            <span
+                                                class="timeline-badge border-2 border border-info flex-shrink-0 my-8"></span>
+                                            <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                                        </div>
+                                        <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">Khai giảng năm học
+                                            <a href="javascript:void(0)"
+                                                class="text-primary d-block fw-normal">#ML-3467</a>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-item d-flex position-relative overflow-hidden">
+                                        <div class="timeline-time text-dark flex-shrink-0 text-end">12:00 am</div>
+                                        <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                                            <span
+                                                class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
+                                            <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                                        </div>
+                                        <div class="timeline-desc fs-3 text-dark mt-n1">Khai giảng năm học</div>
+                                    </li>
+                                    <li class="timeline-item d-flex position-relative overflow-hidden">
+                                        <div class="timeline-time text-dark flex-shrink-0 text-end">09:30 am</div>
+                                        <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                                            <span
+                                                class="timeline-badge border-2 border border-warning flex-shrink-0 my-8"></span>
+                                            <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                                        </div>
+                                        <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">Khai giảng năm học<a
+                                                href="javascript:void(0)"
+                                                class="text-primary d-block fw-normal">#ML-3467</a>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-item d-flex position-relative overflow-hidden">
+                                        <div class="timeline-time text-dark flex-shrink-0 text-end">09:30 am</div>
+                                        <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                                            <span
+                                                class="timeline-badge border-2 border border-danger flex-shrink-0 my-8"></span>
+                                            <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                                        </div>
+                                        <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">Khai giảng năm học
+                                        </div>
+                                    </li>
+                                    <li class="timeline-item d-flex position-relative overflow-hidden">
+                                        <div class="timeline-time text-dark flex-shrink-0 text-end">12:00 am</div>
+                                        <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                                            <span
+                                                class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
+                                        </div>
+                                        <div class="timeline-desc fs-3 text-dark mt-n1">Bế mạc</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 d-flex align-items-stretch">
+                        <div class="card w-100">
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-semibold mb-4">Phân công công việc</h5>
+                                <div class="table-responsive table-wrapper2">
+                                    <table class="table text-nowrap mb-0 align-middle table-bordered">
+                                        <thead class="text-dark fs-4">
+                                            <tr>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">STT</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Công việc</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Giao bởi</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Hành động</h6>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Bổ sung hồ sơ abcxyz</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Hiệu trưởng</p>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <button class="icon-btn" style="background: transparent; border: 0px; margin-right: 10px;">
+                                                        <i class="bi bi-plus-circle" style="font-size: 20px;"></i>
+                                                    </button>
+                                                    <button class="icon-btn" style="background: transparent; border: 0px;">
+                                                        <i class="bi bi-pencil" style="font-size: 20px;"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">2</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Bổ sung hồ sơ abcxyz</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Hiệu trưởng</p>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <button class="icon-btn" style="background: transparent; border: 0px; margin-right: 10px;">
+                                                        <i class="bi bi-plus-circle" style="font-size: 20px;"></i>
+                                                    </button>
+                                                    <button class="icon-btn" style="background: transparent; border: 0px;">
+                                                        <i class="bi bi-pencil" style="font-size: 20px;"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">3</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Bổ sung hồ sơ abcxyz</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Hiệu trưởng</p>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <button class="icon-btn" style="background: transparent; border: 0px; margin-right: 10px;">
+                                                        <i class="bi bi-plus-circle" style="font-size: 20px;"></i>
+                                                    </button>
+                                                    <button class="icon-btn" style="background: transparent; border: 0px;">
+                                                        <i class="bi bi-pencil" style="font-size: 20px;"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">4</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Bổ sung hồ sơ abcxyz</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Hiệu trưởng</p>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <button class="icon-btn" style="background: transparent; border: 0px; margin-right: 10px;">
+                                                        <i class="bi bi-plus-circle" style="font-size: 20px;"></i>
+                                                    </button>
+                                                    <button class="icon-btn" style="background: transparent; border: 0px;">
+                                                        <i class="bi bi-pencil" style="font-size: 20px;"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../dashboard/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../dashboard/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dashboard/js/sidebarmenu.js"></script>
+    <script src="../dashboard/js/app.min.js"></script>
+    <script src="../dashboard/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="../dashboard/libs/simplebar/dist/simplebar.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/circle-progress.min.js"></script>
+    <script src="../assets/js/progress.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Student Saved</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon/boy.png" />
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../dashboard/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/style_ds.css" />
+</head>
+
+<body>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div>
+                <div class="brand-logo d-flex align-items-center justify-content-between"
+                    style="display: flex; justify-content: center !important;">
+                    <a href="./index.html" class="text-nowrap logo-img">
+                        <img src="../assets/img/logo/logo5.png" width="auto" alt="" />
+                    </a>
+                    <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                        <i class="ti ti-x fs-8"></i>
+                    </div>
+                </div>
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                    <ul id="sidebarnav">
+                        <li class="nav-small-cap">
+                            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                            <span class="hide-menu">Chung</span>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-layout-dashboard"></i>
+                                </span>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-user-plus"></i>
+                                </span>
+                                <span class="hide-menu">Tài khoản</span>
+                            </a>
+                        </li>
+                        <li class="nav-small-cap">
+                            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                            <span class="hide-menu">Học sinh</span>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-article"></i>
+                                </span>
+                                <span class="hide-menu">Bài tập</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-alert-circle"></i>
+                                </span>
+                                <span class="hide-menu">Mục tiêu</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link active" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-cards"></i>
+                                </span>
+                                <span class="hide-menu">Đã lưu</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!--  Sidebar End -->
+        <!--  Main wrapper -->
+        <div class="body-wrapper">
+            <!--  Header Start -->
+            <header class="app-header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-block d-xl-none">
+                            <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse"
+                                href="javascript:void(0)">
+                                <i class="ti ti-menu-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end mt-3">
+                            <button style="background: transparent; border: 0px">
+                                <img src="../assets/img/logo/bell.svg" alt="search logo" />
+                            </button>
+                            <div class="user-menu">
+                                <div class="action">
+                                    <div class="profile" onclick="menuToggle()">
+                                        <img src="../assets/img/avatar/Avator-3.png" />
+                                        <div class="profile-info">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h7><strong>User Name</strong></h7>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p>Học sinh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu">
+                                        <ul>
+                                            <li>
+                                                <img src="../assets/img/icon/user.png" /><a href="#">Tài khoản</a>
+                                            </li>
+                                            <li>
+                                                <img src="../assets/img/icon/edit.png" /><a href="#">Sửa thông tin</a>
+                                            </li>
+                                            <li>
+                                                <img src="../assets/img/icon/settings.png" /><a href="#">Cài đặt</a>
+                                            </li>
+                                            <li>
+                                                <img src="../assets/img/icon/log-out.png" /><a href="#">Đăng xuất</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!--  Header End -->
+            <div class="container-fluid" style="padding-top: 100px;">
+                <!--  Row 1 -->
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-stretch">
+                        <div class="card w-100">
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-semibold mb-4">Xem sau</h5>
+                                <div class="table-responsive table-wrapper2">
+                                    <table class="table text-nowrap mb-0 align-middle table-bordered">
+                                        <thead class="text-dark fs-4">
+                                            <tr>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">STT</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Tên sách</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Thể loại</h6>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">2</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">3</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-stretch">
+                        <div class="card w-100">
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-semibold mb-4">Gần đây</h5>
+                                <div class="table-responsive table-wrapper2">
+                                    <table class="table text-nowrap mb-0 align-middle table-bordered">
+                                        <thead class="text-dark fs-4">
+                                            <tr>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">STT</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Tên sách</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Thể loại</h6>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">2</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">3</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-stretch">
+                        <div class="card w-100">
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-semibold mb-4">Đánh dấu trang đang đọc</h5>
+                                <div class="table-responsive table-wrapper2">
+                                    <table class="table text-nowrap mb-0 align-middle table-bordered">
+                                        <thead class="text-dark fs-4">
+                                            <tr>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">STT</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Tên sách</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Thể loại</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Trang</h6>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">2</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">3</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">10</h6>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-stretch">
+                        <div class="card w-100">
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-semibold mb-4">Trang được highlight</h5>
+                                <div class="table-responsive table-wrapper2">
+                                    <table class="table text-nowrap mb-0 align-middle table-bordered">
+                                        <thead class="text-dark fs-4">
+                                            <tr>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">STT</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Tên sách</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Thể loại</h6>
+                                                </th>
+                                                <th class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">Trang</h6>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">2</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">3</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-normal mb-1">Tiếng Việt 1</h6>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <p class="mb-0 fw-normal">Sách tham khảo</p>
+                                                </td>
+                                                <td class="border-bottom-0 text-center">
+                                                    <h6 class="fw-semibold mb-0">10</h6>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../dashboard/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../dashboard/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dashboard/js/sidebarmenu.js"></script>
+    <script src="../dashboard/js/app.min.js"></script>
+    <script src="../dashboard/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="../dashboard/libs/simplebar/dist/simplebar.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
