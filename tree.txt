@@ -1,0 +1,497 @@
+
+C:.
+|   .gitignore
+|   app.js
+|   index.html
+|   LICENSE
+|   package-lock.json
+|   package.json
+|   README.md
+|   tree.txt
+|   
++---bin
+|       www
+|       www.js
+|       
++---config
+|       appconfig.js
+|       config.json
+|       
++---html
+|   |   about-us.html
+|   |   blog-details.html
+|   |   blog.html
+|   |   contact.html
+|   |   home-2.html
+|   |   home-3.html
+|   |   home-4.html
+|   |   project-details.html
+|   |   project.html
+|   |   service-details.html
+|   |   services.html
+|   |   team.html
+|   |   
+|   +---assets
+|   |   +---css
+|   |   |       aos.css
+|   |   |       bootstrap.min.css
+|   |   |       default.css
+|   |   |       fontawesome-all.min.css
+|   |   |       landingpage.css
+|   |   |       magnific-popup.css
+|   |   |       slick.css
+|   |   |       style.css
+|   |   |       style.css.map
+|   |   |       swiper-bundle.min.css
+|   |   |       
+|   |   +---docs
+|   |   |       pdf.pdf
+|   |   |       
+|   |   +---fonts
+|   |   |   |   fa-brands-400.eot
+|   |   |   |   fa-brands-400.svg
+|   |   |   |   fa-brands-400.ttf
+|   |   |   |   fa-brands-400.woff
+|   |   |   |   fa-brands-400.woff2
+|   |   |   |   fa-regular-400.eot
+|   |   |   |   fa-regular-400.svg
+|   |   |   |   fa-regular-400.ttf
+|   |   |   |   fa-regular-400.woff
+|   |   |   |   fa-regular-400.woff2
+|   |   |   |   fa-solid-900.eot
+|   |   |   |   fa-solid-900.svg
+|   |   |   |   fa-solid-900.ttf
+|   |   |   |   fa-solid-900.woff
+|   |   |   |   fa-solid-900.woff2
+|   |   |   |   generator_config.txt
+|   |   |   |   
+|   |   |   \---Roboto
+|   |   |           Roboto-Black.ttf
+|   |   |           Roboto-BlackItalic.ttf
+|   |   |           Roboto-Bold.ttf
+|   |   |           Roboto-BoldItalic.ttf
+|   |   |           Roboto-Italic.ttf
+|   |   |           Roboto-Light.ttf
+|   |   |           Roboto-LightItalic.ttf
+|   |   |           Roboto-Medium.ttf
+|   |   |           Roboto-MediumItalic.ttf
+|   |   |           Roboto-Regular.ttf
+|   |   |           Roboto-Thin.ttf
+|   |   |           Roboto-ThinItalic.ttf
+|   |   |           
+|   |   +---img
+|   |   |   |   Map.png
+|   |   |   |   
+|   |   |   +---about
+|   |   |   |       about-right.png
+|   |   |   |       about01.jpg
+|   |   |   |       about02.jpg
+|   |   |   |       about04.png
+|   |   |   |       aboutbg.png
+|   |   |   |       aboutus.png
+|   |   |   |       about_info.svg
+|   |   |   |       abou_intro_right.png
+|   |   |   |       contemporary.jpg
+|   |   |   |       creative.jpg
+|   |   |   |       Signature.svg
+|   |   |   |       
+|   |   |   +---action
+|   |   |   |       image.svg
+|   |   |   |       pattern.svg
+|   |   |   |       pattern02.svg
+|   |   |   |       playimg.svg
+|   |   |   |       
+|   |   |   +---avatar
+|   |   |   |       Avator-1.png
+|   |   |   |       Avator-2.png
+|   |   |   |       Avator-3.png
+|   |   |   |       Avator-4.png
+|   |   |   |       Avator-5.png
+|   |   |   |       
+|   |   |   +---banner
+|   |   |   |       banner.png
+|   |   |   |       banner01.jpg
+|   |   |   |       banner02.jpg
+|   |   |   |       banner03.jpg
+|   |   |   |       banner03.png
+|   |   |   |       banner04.jpg
+|   |   |   |       banner04.png
+|   |   |   |       banner05.jpg
+|   |   |   |       breadcrumb-banner.png
+|   |   |   |       
+|   |   |   +---bannerLayer
+|   |   |   |       bannerLayer-01.png
+|   |   |   |       
+|   |   |   +---blog
+|   |   |   |       article01.jpg
+|   |   |   |       article02.jpg
+|   |   |   |       article03.jpg
+|   |   |   |       author.png
+|   |   |   |       blogdetails.jpg
+|   |   |   |       image01.jpg
+|   |   |   |       image02.jpg
+|   |   |   |       image03.jpg
+|   |   |   |       image04.jpg
+|   |   |   |       image05.jpg
+|   |   |   |       image06.jpg
+|   |   |   |       recentpost01.png
+|   |   |   |       recentpost02.png
+|   |   |   |       recentpost03.png
+|   |   |   |       team04.png
+|   |   |   |       
+|   |   |   +---book
+|   |   |   |       book1.png
+|   |   |   |       book2.png
+|   |   |   |       book3.png
+|   |   |   |       book4.png
+|   |   |   |       
+|   |   |   +---brand
+|   |   |   |       01.png
+|   |   |   |       02.png
+|   |   |   |       03.png
+|   |   |   |       acer.gif
+|   |   |   |       apple-music.png
+|   |   |   |       discover.png
+|   |   |   |       disnep.png
+|   |   |   |       googlelogo.png
+|   |   |   |       NOKIA.png
+|   |   |   |       simfy.png
+|   |   |   |       
+|   |   |   +---client
+|   |   |   |       01.svg
+|   |   |   |       02.svg
+|   |   |   |       03.svg
+|   |   |   |       Rectangle01.svg
+|   |   |   |       right.png
+|   |   |   |       
+|   |   |   +---client-review
+|   |   |   |       Image.png
+|   |   |   |       review.png
+|   |   |   |       
+|   |   |   +---favicon
+|   |   |   |       boy.png
+|   |   |   |       
+|   |   |   +---footer
+|   |   |   |       footer-bg.png
+|   |   |   |       footer_logo.svg
+|   |   |   |       light.png
+|   |   |   |       logo.svg
+|   |   |   |       
+|   |   |   +---icon
+|   |   |   |       arrow-left.svg
+|   |   |   |       arrow-right.svg
+|   |   |   |       downArrow.png
+|   |   |   |       edit.png
+|   |   |   |       f.svg
+|   |   |   |       facebook-f.svg
+|   |   |   |       filter.svg
+|   |   |   |       github.svg
+|   |   |   |       graphicsElement.svg
+|   |   |   |       Icon awesome-play.svg
+|   |   |   |       left.svg
+|   |   |   |       linkedin-in.svg
+|   |   |   |       log-out.png
+|   |   |   |       mobile_responsive.svg
+|   |   |   |       Path.svg
+|   |   |   |       phone-black.svg
+|   |   |   |       pixel_perfect.svg
+|   |   |   |       play-white.svg
+|   |   |   |       play.svg
+|   |   |   |       reactangle-blue-sm.svg
+|   |   |   |       reactanlge-blue.svg
+|   |   |   |       right.svg
+|   |   |   |       settings.png
+|   |   |   |       top_arrow.svg
+|   |   |   |       twitter.svg
+|   |   |   |       user.png
+|   |   |   |       web_design.svg
+|   |   |   |       x.svg
+|   |   |   |       
+|   |   |   +---logo
+|   |   |   |       ava.svg
+|   |   |   |       bell.svg
+|   |   |   |       logo.png
+|   |   |   |       logo03.png
+|   |   |   |       logo04.png
+|   |   |   |       logo5.png
+|   |   |   |       phone-alt-blue.png
+|   |   |   |       phone-alt.svg
+|   |   |   |       phone-red.svg
+|   |   |   |       search-white.svg
+|   |   |   |       search.svg
+|   |   |   |       
+|   |   |   +---mask
+|   |   |   |       backround-shape.png
+|   |   |   |       banner03mask01.png
+|   |   |   |       banner03mask02.png
+|   |   |   |       breadcrumbmask.png
+|   |   |   |       circle-01.svg
+|   |   |   |       circlePenta.svg
+|   |   |   |       dotblue.svg
+|   |   |   |       downShape.png
+|   |   |   |       downShape.svg
+|   |   |   |       layers-dot-2.png
+|   |   |   |       layers-dot.png
+|   |   |   |       layerShape-01.png
+|   |   |   |       layerShape-02.png
+|   |   |   |       leftMask.svg
+|   |   |   |       mask-page-04.png
+|   |   |   |       mask06.png
+|   |   |   |       mask06.svg
+|   |   |   |       mask09.svg
+|   |   |   |       mask5.png
+|   |   |   |       mask6.png
+|   |   |   |       mask7.png
+|   |   |   |       mask8.png
+|   |   |   |       mask9.png
+|   |   |   |       maskbg.png
+|   |   |   |       maskPink-01.svg
+|   |   |   |       maskPink-02.svg
+|   |   |   |       maskPink-03.svg
+|   |   |   |       maskPink-04.svg
+|   |   |   |       maskPink-05.svg
+|   |   |   |       Path 1177.png
+|   |   |   |       penta-01.svg
+|   |   |   |       penta-02.svg
+|   |   |   |       Quotation.png
+|   |   |   |       rectangle01.png
+|   |   |   |       rectangle02.png
+|   |   |   |       work.png
+|   |   |   |       
+|   |   |   +---people
+|   |   |   |       people-01.png
+|   |   |   |       
+|   |   |   +---price
+|   |   |   |       Free.png
+|   |   |   |       Premium.png
+|   |   |   |       Standard.png
+|   |   |   |       
+|   |   |   +---project
+|   |   |   |       overview01.png
+|   |   |   |       overview02.png
+|   |   |   |       project-overview.jpg
+|   |   |   |       project01.jpg
+|   |   |   |       project02.png
+|   |   |   |       project03.png
+|   |   |   |       project04.png
+|   |   |   |       project05.png
+|   |   |   |       project06.png
+|   |   |   |       
+|   |   |   +---services
+|   |   |   |       design01.png
+|   |   |   |       design02.png
+|   |   |   |       design03.png
+|   |   |   |       image01.svg
+|   |   |   |       image02.svg
+|   |   |   |       image03.svg
+|   |   |   |       image04.svg
+|   |   |   |       image05.svg
+|   |   |   |       image06.svg
+|   |   |   |       portrait-smiling-happy-man-standing.png
+|   |   |   |       process01.svg
+|   |   |   |       process02.svg
+|   |   |   |       process03.svg
+|   |   |   |       services.png
+|   |   |   |       services01.svg
+|   |   |   |       services02.svg
+|   |   |   |       services03.svg
+|   |   |   |       services04.svg
+|   |   |   |       special_services01.svg
+|   |   |   |       special_services02.svg
+|   |   |   |       special_services03.svg
+|   |   |   |       special_services04.svg
+|   |   |   |       special_services05.svg
+|   |   |   |       special_services06.svg
+|   |   |   |       special_services07.svg
+|   |   |   |       
+|   |   |   +---team
+|   |   |   |       member01.png
+|   |   |   |       member02.png
+|   |   |   |       member03.png
+|   |   |   |       team01.png
+|   |   |   |       team02.png
+|   |   |   |       team03.png
+|   |   |   |       team04.png
+|   |   |   |       team05.png
+|   |   |   |       team06.png
+|   |   |   |       working-photos.png
+|   |   |   |       
+|   |   |   \---testimonial
+|   |   |           coding.svg
+|   |   |           ellipse1.png
+|   |   |           ellipse2.png
+|   |   |           ellipse3.png
+|   |   |           layers.svg
+|   |   |           Oval-1.png
+|   |   |           Oval-2.png
+|   |   |           Oval.png
+|   |   |           testimonialbg.png
+|   |   |           ux.svg
+|   |   |           
+|   |   +---js
+|   |   |   |   aos.js
+|   |   |   |   bootstrap.min.js
+|   |   |   |   circle-progress.min.js
+|   |   |   |   jquery.counterup.min.js
+|   |   |   |   jquery.magnific-popup.min.js
+|   |   |   |   main.js
+|   |   |   |   popper.min.js
+|   |   |   |   progress.js
+|   |   |   |   slick.min.js
+|   |   |   |   slider.js
+|   |   |   |   swiper-bundle.min.js
+|   |   |   |   waypoint.min.js
+|   |   |   |   
+|   |   |   +---pspdfkit
+|   |   |   |   |   pspdfkit.js
+|   |   |   |   |   
+|   |   |   |   \---pspdfkit-lib
+|   |   |   |           Caveat-Bold.woff
+|   |   |   |           Caveat-Bold.woff2
+|   |   |   |           chunk-core-worker-f0c22e8ff1f6312d.js
+|   |   |   |           chunk-gdpicture-1275a85927f027bc.js
+|   |   |   |           chunk-gdpicture-worker-16aecf2bd9562e76.js
+|   |   |   |           chunk-lazy-de-1bfd89c3290e919d.js
+|   |   |   |           chunk-lazy-sha-6138de61bff3d68e.js
+|   |   |   |           chunk-locale-cs-258706f71bb3af26.js
+|   |   |   |           chunk-locale-cy-0a49e710362a064c.js
+|   |   |   |           chunk-locale-da-c2e915b2b96d9aba.js
+|   |   |   |           chunk-locale-de-049be45c48e69ad6.js
+|   |   |   |           chunk-locale-el-bbcab3d5fcfff9e1.js
+|   |   |   |           chunk-locale-en-289e974ede10a110.js
+|   |   |   |           chunk-locale-en-GB-7ade3521fa31d1ac.js
+|   |   |   |           chunk-locale-es-07f585dd44ef4e3c.js
+|   |   |   |           chunk-locale-fi-72f5b8bf8b194a40.js
+|   |   |   |           chunk-locale-fr-479e7eb580209384.js
+|   |   |   |           chunk-locale-fr-CA-bf56f7be4af0762f.js
+|   |   |   |           chunk-locale-hr-f779f154e49379d6.js
+|   |   |   |           chunk-locale-id-a08a2dc2ce8eca77.js
+|   |   |   |           chunk-locale-it-7a777553a30f583e.js
+|   |   |   |           chunk-locale-ja-5d95036e4e50a76b.js
+|   |   |   |           chunk-locale-ko-f72c660dc6c37b0f.js
+|   |   |   |           chunk-locale-ms-345cf9dc12e687c9.js
+|   |   |   |           chunk-locale-nb-NO-b97801f6c03a4bb6.js
+|   |   |   |           chunk-locale-nl-d234b472d7fccafe.js
+|   |   |   |           chunk-locale-pl-32f89f0373052e72.js
+|   |   |   |           chunk-locale-pt-19b88584836e92f4.js
+|   |   |   |           chunk-locale-pt-PT-1c0cc0ad4c08ac2e.js
+|   |   |   |           chunk-locale-ru-2d72f9271d2d3b3e.js
+|   |   |   |           chunk-locale-sk-3740bb90876f3ee5.js
+|   |   |   |           chunk-locale-sl-3adc0339a82d19ee.js
+|   |   |   |           chunk-locale-sv-2cef730cb183567c.js
+|   |   |   |           chunk-locale-th-451a226d14a8b478.js
+|   |   |   |           chunk-locale-tr-e3b49986ab32820b.js
+|   |   |   |           chunk-locale-uk-10913b2207ba5c56.js
+|   |   |   |           chunk-locale-zh-Hans-f489718a501cc12a.js
+|   |   |   |           chunk-locale-zh-Hant-b03af15af196edad.js
+|   |   |   |           chunk-localedata-cs-97b965a5183b8de7.js
+|   |   |   |           chunk-localedata-cy-219af77dca6ce4d8.js
+|   |   |   |           chunk-localedata-da-d6a1b5bb2c6b0a26.js
+|   |   |   |           chunk-localedata-de-0ae2415c9c0c6120.js
+|   |   |   |           chunk-localedata-el-7fca105982293186.js
+|   |   |   |           chunk-localedata-en-25fea9a7e123335b.js
+|   |   |   |           chunk-localedata-es-34c06cc06f9f755e.js
+|   |   |   |           chunk-localedata-fi-004c9c4d74f29773.js
+|   |   |   |           chunk-localedata-fr-0dee072ed275597f.js
+|   |   |   |           chunk-localedata-hr-a31da021795933d2.js
+|   |   |   |           chunk-localedata-id-8cb657b7de4c654f.js
+|   |   |   |           chunk-localedata-it-8f103b41a04b7c0c.js
+|   |   |   |           chunk-localedata-ja-57382aa0b95c3ccd.js
+|   |   |   |           chunk-localedata-ko-aee3fecd391356b3.js
+|   |   |   |           chunk-localedata-ms-4a706d5d7c0a7f8d.js
+|   |   |   |           chunk-localedata-nb-81f049deb23656b6.js
+|   |   |   |           chunk-localedata-nl-2695379e7c74be2f.js
+|   |   |   |           chunk-localedata-pl-61ec4fea22508817.js
+|   |   |   |           chunk-localedata-pt-9a8f72e87582ed22.js
+|   |   |   |           chunk-localedata-ru-77eedda1aebbee30.js
+|   |   |   |           chunk-localedata-sk-37acd695fb465acb.js
+|   |   |   |           chunk-localedata-sl-3a31807164e27ea2.js
+|   |   |   |           chunk-localedata-sv-57869b59bb18e97f.js
+|   |   |   |           chunk-localedata-th-e64342a4027af57f.js
+|   |   |   |           chunk-localedata-tr-18a492e267513011.js
+|   |   |   |           chunk-localedata-uk-58cec84aacc8d6aa.js
+|   |   |   |           chunk-localedata-zh-fecead4e89820a0c.js
+|   |   |   |           chunk-server-bfc09e675b848d0c.js
+|   |   |   |           chunk-server-instant-b13f93b90a3b3272.js
+|   |   |   |           chunk-server-rest-c3c97e56b9d22fd1.js
+|   |   |   |           chunk-standalone-096459f9cb8a7d87.js
+|   |   |   |           chunk-standalone-server-5db8ef35f54e9d78.js
+|   |   |   |           core-worker.js
+|   |   |   |           dark-428ce41756cbb3ca.css
+|   |   |   |           gdpicture-worker.js
+|   |   |   |           MarckScript-Regular.woff
+|   |   |   |           MarckScript-Regular.woff2
+|   |   |   |           Meddon-Regular.woff
+|   |   |   |           Meddon-Regular.woff2
+|   |   |   |           Pacifico-Regular.woff
+|   |   |   |           Pacifico-Regular.woff2
+|   |   |   |           pspdfkit-2024.5.1.css
+|   |   |   |           pspdfkit-4fba0e2d92d49d53.wasm
+|   |   |   |           pspdfkit-91fc6676a4a3c1b9.wasm.js
+|   |   |   |           
+|   |   |   \---vendor
+|   |   |           jquery-1.12.4.min.js
+|   |   |           modernizr-3.5.0.min.js
+|   |   |           
+|   |   \---scss
+|   |       |   style.scss
+|   |       |   _about-info.scss
+|   |       |   _breadcrumb.scss
+|   |       |   _callto-action.scss
+|   |       |   _client.scss
+|   |       |   _common.scss
+|   |       |   _footer.scss
+|   |       |   _mixins.scss
+|   |       |   _newsletter.scss
+|   |       |   _price.scss
+|   |       |   _projectSlider.scss
+|   |       |   _review-testimonial.scss
+|   |       |   _services-introduction.scss
+|   |       |   _skill.scss
+|   |       |   _special-services.scss
+|   |       |   _team-member.scss
+|   |       |   _testimonial.scss
+|   |       |   _typography.scss
+|   |       |   _variables.scss
+|   |       |   
+|   |       +---components
+|   |       |       _banner.scss
+|   |       |       _brand.scss
+|   |       |       _header.scss
+|   |       |       _map.scss
+|   |       |       _mobileMenu.scss
+|   |       |       _responsive.scss
+|   |       |       _searchBox.scss
+|   |       |       
+|   |       \---page
+|   |               _aboutus.scss
+|   |               _blog.scss
+|   |               _contact.scss
+|   |               _project.scss
+|   |               _services.scss
+|   |               _team-member.scss
+|   |               
+|   \---pages
+|           bookdetail.html
+|           home.html
+|           morebook.html
+|           pdfviewer.html
+|           
++---public
+|   \---stylesheets
+|           style.css
+|           
++---routes
+|       about.js
+|       index.js
+|       users.js
+|       
+\---views
+        about.pug
+        error.pug
+        header.pug
+        index.pug
+        layout.pug
+        login.pug
+        users.pug
+        
